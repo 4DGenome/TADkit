@@ -22,8 +22,8 @@
 
 				var filetype = filename.substr(filename.lastIndexOf('.')+1);
 				var resource = {
-					"filename" : filename,
-					"filetype" : filetype
+					"filename": filename,
+					"filetype": filetype
 				};
 				if (filetype == "css") {
 					resource.nodeName = "link";

@@ -6,11 +6,22 @@
  */
 (function() {
 	'use strict';
+	/**
+	 * @ngdoc service
+	 * @name browsers.service:JsorollaService
+	 * @description
+	 * Service loading JSorolla for Track management
+	 *
+	 * @requires ONLINE
+	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
+	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
+	 *
+	 */
 	angular
 		.module('browsers')
 		.factory('JsorollaService', JsorollaService);
 
-	function JsorollaService($rootScope, $log, $document, $q, $timeout, Files) {
+	function JsorollaService($log, $q, Files) {
 		return {
 			/**
 			 * @ngdoc function

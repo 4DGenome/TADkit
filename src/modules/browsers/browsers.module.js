@@ -5,7 +5,7 @@
 	 * @name browsers
 	 * @module browsers
 	 * @description
-	 * Genoverse Module
+	 * Bowsers Module
 	 * Contains generic scripts which are not available on Bower
 	 * These are not app-specific but essential to the App.
 	 *

@@ -1,0 +1,212 @@
+[
+    {
+        "metadata": {
+            "version": 0.1,
+            "type": "genomebrowser",
+            "generator": "GenomeBrowsersJS"
+        },
+        "object": {
+            "uuid": "00000000-0000-0000-0000-000000000000",
+            "id": "biodalliance",
+            "title": "Biodalliance Track Browser",
+            "acronym": "bd",
+            "type": "track-browser",
+        },
+        "equivalentTerms": {
+            "container": "pageName",
+            "layout": "",
+                "width": "",
+                "height": "",
+                "padding": "",
+            "container": "pageName",
+            "reference": "coordSystem",
+                "species": "speciesName",
+                "ucscID": "ucscName",
+                "taxonomy": "taxon",
+				"author": "auth",
+                "version": "version",
+                "fastaURL": "fastaURL",
+                "cytobandURL": "cytobandURL",
+            "region": "coordSystem",
+                "chromsome": "chr",
+                "chromStart": "viewStart",
+                "chromEnd": "viewEnd",
+                "cookieKey": "cookieKey",
+            "tracks": [],
+            "style": "",
+                "color": "",
+                "background": "",
+                "palette": [],
+        },
+        "defaultSources": {
+        }
+    },
+    {
+        "metadata": {
+            "version": 0.1,
+            "type": "genomebrowser",
+            "generator": "GenomeBrowsersJS"
+        },
+        "object": {
+            "uuid": "00000000-0000-0000-0000-000000000000",
+            "id": "genoverse",
+            "title": "Genoverse Track Browser",
+            "acronym": "gv",
+            "type": "track-browser"
+        },
+        "equivalentTerms": {
+            "container": "container",
+            "layout": "",
+                "width": "",
+                "height": "",
+                "padding": "",
+            "container": "",
+            "reference": "",
+                "species": "genome",
+                "taxonomy": "",
+				"author": "",
+                "version": "",
+                "fastaURL": "",
+                "cytobandURL": "",
+                "ucscID": "",
+            "region": "",
+                "chromosome": "chr",
+                "chromStart": "start",
+                "chromEnd": "end",
+                "cookieKey": "",
+            "tracks": [],
+            "style": "",
+                "color": "",
+                "background": "",
+                "palette": [],
+        },
+        "defaultSources": {
+        }
+    },
+    {
+        "metadata": {
+            "version": 0.1,
+            "type": "genomebrowser",
+            "generator": "GenomeBrowsersJS"
+        },
+        "object": {
+            "uuid": "00000000-0000-0000-0000-000000000000",
+            "id": "jbrowse",
+            "title": "jBrowse Track Browser",
+            "acronym": "jb",
+            "type": "track-browser"
+        },
+        "equivalentTerms": {
+            "container": "",
+            "layout": "",
+                "width": "",
+                "height": "",
+                "padding": "",
+            "container": "",
+            "reference": "",
+                "species": "",
+                "taxonomy": "",
+				"author": "",
+                "version": "",
+                "fastaURL": "",
+                "cytobandURL": "",
+                "ucscID": "",
+            "region": "",
+                "chromosome": "",
+                "chromStart": "",
+                "chromEnd": "",
+                "cookieKey": "",
+            "tracks": [],
+            "style": "",
+                "color": "",
+                "background": "",
+                "palette": [],
+        },
+        "defaultSources": {
+        }
+    },
+    {
+        "metadata": {
+            "version": 0.1,
+            "type": "genomebrowser",
+            "generator": "GenomeBrowsersJS"
+        },
+        "object": {
+            "uuid": "00000000-0000-0000-0000-000000000000",
+            "id": "jsorolla",
+            "title": "JSorolla Track Browser",
+            "acronym": "js",
+            "type": "track-browser"
+        },
+        "equivalentTerms": {
+            "container": "target",
+            "layout": "",
+                "width": "width",
+                "height": "",
+                "padding": "",
+            "container": "",
+            "reference": "",
+                "species": "species",
+                "taxonomy": "",
+				"author": "",
+                "version": "",
+                "fastaURL": "",
+                "cytobandURL": "",
+                "ucscID": "",
+            "region": "region",
+                "chromosome": "chromosome",
+                "chromStart": "start",
+                "chromEnd": "end",
+                "cookieKey": "",
+            "tracks": [],
+            "style": "",
+                "color": "",
+                "background": "",
+                "palette": [],
+        },
+        "defaultSources": {
+        }
+    },
+    {
+        "metadata": {
+            "version": 0.1,
+            "type": "genomebrowser",
+            "generator": "GenomeBrowsersJS"
+        },
+        "object": {
+            "uuid": "00000000-0000-0000-0000-000000000000",
+            "id": "igvjs",
+            "title": "IGVjs Track Browser",
+            "acronym": "ig",
+            "type": "track-browser"
+        },
+        "equivalentTerms": {
+            "container": "",
+            "layout": "",
+                "width": "",
+                "height": "",
+                "padding": "",
+            "container": "",
+            "reference": "",
+                "species": "",
+                "taxonomy": "",
+				"author": "",
+                "version": "",
+                "fastaURL": "",
+                "cytobandURL": "",
+                "ucscID": "",
+            "region": "",
+                "chromosome": "",
+                "chromStart": "",
+                "chromEnd": "",
+                "cookieKey": "",
+            "tracks": [],
+            "style": "",
+                "color": "",
+                "background": "",
+                "palette": [],
+        },
+        "defaultSources": {
+        }
+    }
+]

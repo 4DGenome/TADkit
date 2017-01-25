@@ -13,7 +13,7 @@
 		.module('generic')
 		.factory('Files', Files);
 
-	function Files() {
+	function Files($log, $rootScope, $document, $q, $http) {
 		return {
 			/**
 			 * @ngdoc function

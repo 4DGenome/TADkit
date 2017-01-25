@@ -14,12 +14,12 @@
 
 	function Clusters(VERBOSE, $log, $q) {
 		var clusters = {
-			loaded : [],
-			current : {
-				dataset : {},
-				index : 0,
-				cluster : 1,
-				centroid : 1
+			loaded: [],
+			current: {
+				dataset: {},
+				index: 0,
+				cluster: 1,
+				centroid: 1
 			}		
 		};
 		return {

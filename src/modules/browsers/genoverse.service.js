@@ -10,11 +10,22 @@
  */
 (function() {
 	'use strict';
+	/**
+	 * @ngdoc service
+	 * @name browsers.service:GenoverseService
+	 * @description
+	 * Service loading Genoverse for Track management
+	 *
+	 * @requires ONLINE
+	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
+	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
+	 *
+	 */
 	angular
 		.module('browsers')
 		.factory('GenoverseService', GenoverseService);
 
-	function GenoverseService(ONLINE, $log, $document, $q, $http, $timeout, $rootScope) {
+	function GenoverseService($log, $document, $q, Files) {
 
 		/*** Example Genoverse Config File
 		 *
@@ -65,7 +76,7 @@
 				angular.forEach(resources, function(filename, key) {
 					appendResources.push(Files.appendToHTML(filename));
 				});
-				appendResources.push(Files.loadConfig(configFile));
+//				appendResources.push(Files.loadConfig(configFile));
 
 				return $q.all(appendResources)
 				.then(function(results) {

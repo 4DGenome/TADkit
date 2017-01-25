@@ -1,23 +1,23 @@
 
 {
-        "metadata" : {
-                "version"  : 1.0,
-                "type"     : "dataset",
+        "metadata": {
+                "version": 1.0,
+                "type": "dataset",
                 "generator": "TADbit"
                 },
         "object": {
-                   "chromEnd" : [16240000.0],
-                   "identifier" : "GSE38468",
-                   "assembly" : "DBGP 5 (dm3)",
-                   "chrom" : ["chr2L"],
-                   "experimentType" : "Hi-C",
-                   "cellType" : "kc167",
-                   "project" : "TADbit_paper",
-                   "start" : 10000,
-                   "end" : 1070000,
-                   "chromStart" : [15180000.0],
-                   "resolution" : 10000,
-                   "species" : "Drosophila melanogaster",
+                   "chromEnd": [16240000.0],
+                   "identifier": "GSE38468",
+                   "assembly": "DBGP 5 (dm3)",
+                   "chrom": ["chr2L"],
+                   "experimentType": "Hi-C",
+                   "cellType": "kc167",
+                   "project": "TADbit_paper",
+                   "start": 10000,
+                   "end": 1070000,
+                   "chromStart": [15180000.0],
+                   "resolution": 10000,
+                   "species": "Drosophila melanogaster",
                    "uuid": "e37a3a5d-f4d8-5e9e-84a2-ac488e4bfefc",
                    "title": "Sample TADbit data",
                    "datatype": "xyz",

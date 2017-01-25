@@ -1,24 +1,24 @@
 {
-        "metadata" : {
-                "version"  : 1.0,
-                "type"     : "dataset",
+        "metadata": {
+                "version": 1.0,
+                "type": "dataset",
                 "generator": "TADbit"
                 },
         "object": {
                    "uuid": "2861f252-cbbf-56d8-a103-e7a7aaec3c1c",
 
                    "title": "Sample TADbit data",
-                   "species" : "Mycoplasma pneumoniae M129",
+                   "species": "Mycoplasma pneumoniae M129",
 
-                   "chrom" : ["Chromosome"],
+                   "chrom": ["Chromosome"],
 
 
 
-                   "start" : 0,
-                   "end" : 82,
-                   "chromStart" : [1.0],
-                   "chromEnd" : [830000.0],
-                   "resolution" : 10000.0,
+                   "start": 0,
+                   "end": 82,
+                   "chromStart": [1.0],
+                   "chromEnd": [830000.0],
+                   "resolution": 10000.0,
                    "datatype": "xyz",
                    "components": 3,
                    "source": "local",
