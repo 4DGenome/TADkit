@@ -4,14 +4,16 @@ var gulp = require('gulp');
 // Include Plugins
 var cleanCss = require('gulp-clean-css');
 var concat = require('gulp-concat');
-var Dgeni = require('dgeni');
-//var documentation = require('gulp-documentation');
+var dgeni = require('dgeni');
+var doctoc = require('gulp-doctoc');
+//var dgeni = require('gulp-dgeni');
 var header = require('gulp-header');
 // var jscs = require('gulp-jscs');
 var jshint = require('gulp-jshint');
+var marked = require('gulp-marked');
 var ngAnnotate = require('gulp-ng-annotate');
 var ngConstant = require('gulp-ng-constant');
-//var ngDocs = require('gulp-ngdocs');
+var ngdoc = require('dgeni-packages/ngdoc');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 // var sass = require('gulp-sass');
@@ -56,47 +58,29 @@ gulp.task('lint', function() {
 		.pipe(jshint.reporter('default'));
 });
 
-//// Documentation Angular style JSDoc (HTML)
-//gulp.task('doc-html', function() {
-//	var options = {
-//		// scripts: ['../app.min.js'],
-//		html5Mode: true,
-//		startPage: 'index.html',
-//		title: "TADkit Docs",
-//		titleLink: "index.html"
-//		// image: "docs/image.png",
-//		// imageLink: "http://my-domain.com",
-//	}
-//	return gulp.src(
-//		[
-//		'src/*.js',
-//		'src/**/*.js',
-//		'!src/assets/**/*.js'
-//		])
-//		// .pipe(dgeni({packages: [ngdoc]}))
-//		.pipe(ngDocs.process(options))
-//		.pipe(gulp.dest('doc/html'));
-//});
-//
-//// Documentation GitHub Markdown (MD)
-//gulp.task('docs-md', function() {
-//	return gulp.src(
-//		[
-//		'src/*.js',
-//		'src/**/*.js',
-//		'!src/assets/**/*.js'
-//		])
-//		.pipe(documentation({ format: 'md' }))
-//		.pipe(gulp.dest('docs'));
-//});
-
-
 // Dgeni documentation for GitHub Pages
 gulp.task('docs-dgeni', function() {
     // Import the index.js from the /docs/config folder
-    var dgeni = new Dgeni([require('./docs/config')]);
-    return dgeni.generate();
+    var docs = new dgeni([require('./docs/config')]);
+    return docs.generate();
 });
+
+//gulp.task('docs-dgeni', function () {
+//    return gulp.src([
+//        'src/**/*.js',
+//        '!src/assets/**/*.js'
+//    ])
+//    .pipe(dgeni({packages: [ngdoc]}))
+//    .pipe(gulp.dest('docs/test'));
+//});
+    
+//gulp.task('markdown', function(){
+//  gulp.src('docs/**/*.md')
+//    .pipe(doctoc())
+//    .pipe(marked())
+//    .pipe(gulp.dest('docs/marked'));
+//
+//});
 
 // Concatenate & Minify TADkit JS
 gulp.task('dist-scripts', function() {
@@ -356,7 +340,8 @@ gulp.task('default', [
 	'config',
 	'lint',
     'docs-dgeni',
-	'dist-scripts',
+    //'markdown',
+    'dist-scripts',
 	'dist-modules',
 	'dist-vendor',
 	'app-index',

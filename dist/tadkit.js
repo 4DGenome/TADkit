@@ -42,7 +42,7 @@ angular.module("TADkit")
 
 .constant("NAME", "TADkit")
 
-.constant("VERSION", "1.0.0")
+.constant("VERSION", "1.1.0")
 
 .constant("ENV", "production")
 
@@ -6742,7 +6742,7 @@ angular.module("TADkit")
 		// Loads local JSON and then associated TSV tracks from /examples folder
 		$scope.loadDatasetFromParam = function() {
 			var loading = Datasets.load($stateParams.loadDataset);
-			return $q.all([ loading ])
+            return $q.all([ loading ])
 			.then(function(results){
 				$scope.updateCurrent();
 				$log.info("Dataset loaded: " + $stateParams.loadDataset);			

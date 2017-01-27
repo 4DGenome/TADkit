@@ -8,7 +8,7 @@ angular.module("TADkit")
 
 .constant("NAME", "TADkit")
 
-.constant("VERSION", "1.0.0")
+.constant("VERSION", "1.1.0")
 
 .constant("ENV", "production")
 
