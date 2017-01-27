@@ -4,15 +4,14 @@ var gulp = require('gulp');
 // Include Plugins
 var cleanCss = require('gulp-clean-css');
 var concat = require('gulp-concat');
-// var dgeni = require('gulp-dgeni');
-// var ngdoc = require('dgeni-packages/ngdoc');
-// var documentation = require('gulp-documentation');
+var Dgeni = require('dgeni');
+//var documentation = require('gulp-documentation');
 var header = require('gulp-header');
 // var jscs = require('gulp-jscs');
 var jshint = require('gulp-jshint');
 var ngAnnotate = require('gulp-ng-annotate');
 var ngConstant = require('gulp-ng-constant');
-var ngDocs = require('gulp-ngdocs');
+//var ngDocs = require('gulp-ngdocs');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 // var sass = require('gulp-sass');
@@ -57,38 +56,46 @@ gulp.task('lint', function() {
 		.pipe(jshint.reporter('default'));
 });
 
-// Documentation Angular sttyle JSDoc (HTML)
-gulp.task('doc-html', function() {
-	var options = {
-		// scripts: ['../app.min.js'],
-		html5Mode: true,
-		startPage: 'index.html',
-		title: "TADkit Docs",
-		titleLink: "index.html"
-		// image: "docs/image.png",
-		// imageLink: "http://my-domain.com",
-	}
-	return gulp.src(
-		[
-		'src/*.js',
-		'src/**/*.js',
-		'!src/assets/**/*.js'
-		])
-		// .pipe(dgeni({packages: [ngdoc]}))
-		.pipe(ngDocs.process(options))
-		.pipe(gulp.dest('doc/html'));
-});
+//// Documentation Angular style JSDoc (HTML)
+//gulp.task('doc-html', function() {
+//	var options = {
+//		// scripts: ['../app.min.js'],
+//		html5Mode: true,
+//		startPage: 'index.html',
+//		title: "TADkit Docs",
+//		titleLink: "index.html"
+//		// image: "docs/image.png",
+//		// imageLink: "http://my-domain.com",
+//	}
+//	return gulp.src(
+//		[
+//		'src/*.js',
+//		'src/**/*.js',
+//		'!src/assets/**/*.js'
+//		])
+//		// .pipe(dgeni({packages: [ngdoc]}))
+//		.pipe(ngDocs.process(options))
+//		.pipe(gulp.dest('doc/html'));
+//});
+//
+//// Documentation GitHub Markdown (MD)
+//gulp.task('docs-md', function() {
+//	return gulp.src(
+//		[
+//		'src/*.js',
+//		'src/**/*.js',
+//		'!src/assets/**/*.js'
+//		])
+//		.pipe(documentation({ format: 'md' }))
+//		.pipe(gulp.dest('docs'));
+//});
 
-// Documentation GitHub Markdown (MD)
-gulp.task('docs-md', function() {
-	return gulp.src(
-		[
-		'src/*.js',
-		'src/**/*.js',
-		'!src/assets/**/*.js'
-		])
-		.pipe(documentation({ format: 'md' }))
-		.pipe(gulp.dest('doc'));
+
+// Dgeni documentation for GitHub Pages
+gulp.task('docs-dgeni', function() {
+    // Import the index.js from the /docs/config folder
+    var dgeni = new Dgeni([require('./docs/config')]);
+    return dgeni.generate();
 });
 
 // Concatenate & Minify TADkit JS
@@ -109,13 +116,11 @@ gulp.task('dist-scripts', function() {
 		'src/services/*.js'
 		])
 		.pipe(concat('tadkit.js'))
-		.pipe(gulp.dest('dist')) // isolated dist but requires app
-		.pipe(gulp.dest('tadkit/assets/js')) // only needed when testing
+		.pipe(gulp.dest('dist'))
 		.pipe(rename('tadkit.min.js'))
 		.pipe(ngAnnotate())
 		.pipe(uglify())
-		.pipe(gulp.dest('dist')) // isolated dist but requires app
-		.pipe(gulp.dest('tadkit/assets/js'));
+		.pipe(gulp.dest('dist'));
 });
 
 // Concatenate & Minify Angular Modules
@@ -141,11 +146,11 @@ gulp.task('dist-modules', function() {
 		'src/modules/visualization/*.directive.js'
 		])
 		.pipe(concat('modules.js'))
-		.pipe(gulp.dest('tadkit/assets/js')) // only needed when testing
+		.pipe(gulp.dest('dist/assets/js')) // only needed when testing
 		.pipe(rename('modules.min.js'))
 		.pipe(ngAnnotate())
 		.pipe(uglify())
-		.pipe(gulp.dest('tadkit/assets/js'));
+		.pipe(gulp.dest('dist/assets/js'));
 });
 
 // Transfer Vendor JS
@@ -165,11 +170,11 @@ gulp.task('dist-vendor', function() {
 		// 'bower_components/angular-jsorolla/dist/angular-jsorolla.js' // an angular module to load jsorolla, NOT jsorolla scripts
 		])
 		.pipe(concat('vendors.js'))
-		.pipe(gulp.dest('tadkit/assets/js'))
+		.pipe(gulp.dest('dist/assets/js'))
 		.pipe(rename('vendors.min.js'))
 		.pipe(ngAnnotate())
 		.pipe(uglify())
-		.pipe(gulp.dest('tadkit/assets/js'));
+		.pipe(gulp.dest('dist/assets/js'));
 });
 
 // Transfer Demo index.html
@@ -178,14 +183,14 @@ gulp.task('app-index', function() {
 		'src/tadkit-index.html'
 		])
 		.pipe(rename('index.html'))
-		.pipe(gulp.dest('tadkit'));
+		.pipe(gulp.dest('dist'));
 });
 // Transfer Favicon Assets
 gulp.task('app-favicon', function() {
 	return gulp.src([
 		'src/favicon-32x32.png'
 		])
-		.pipe(gulp.dest('tadkit'));
+		.pipe(gulp.dest('dist'));
 });
 
 // Transfer Libs used in Services for local offline load
@@ -200,7 +205,7 @@ gulp.task('assets-libs', function() {
 		'bower_components/genoverse/**/*' // fake bower... copied from github repo
 		])
 		.pipe(gulp.dest('src/assets/js'))
-		.pipe(gulp.dest('tadkit/assets/js'));
+		.pipe(gulp.dest('dist/assets/js'));
 });
 
 // Transfer HTML Templates
@@ -212,7 +217,7 @@ gulp.task('assets-html', function() {
 		.pipe(rename({dirname: ''}))
 		.pipe(header("<!-- This file is duplicated to ./templates by Gulp. DO NOT EDIT! -->\n"))
 		.pipe(gulp.dest('src/assets/templates'))
-		.pipe(gulp.dest('tadkit/assets/templates'));
+		.pipe(gulp.dest('dist/assets/templates'));
 });
 
 // Compile Sass
@@ -235,10 +240,10 @@ gulp.task('app-css', function() {
 		'src/assets/css/tadkit-typography.css'
 		])
 		.pipe(concat('tadkit.css'))
-		.pipe(gulp.dest('tadkit/assets/css'))
+		.pipe(gulp.dest('dist/assets/css'))
 		.pipe(cleanCss())
 		.pipe(rename('tadkit.min.css'))
-		.pipe(gulp.dest('tadkit/assets/css'));
+		.pipe(gulp.dest('dist/assets/css'));
 });
 
 // Transfer CSS Assets
@@ -247,7 +252,7 @@ gulp.task('assets-css', function() {
 		'src/assets/css/*.css',
 		'!src/assets/css/tadkit-*.css'
 		])
-		.pipe(gulp.dest('tadkit/assets/css'));
+		.pipe(gulp.dest('dist/assets/css'));
 });
 
 // // Transfer Modules CSS Assets
@@ -257,7 +262,7 @@ gulp.task('assets-css', function() {
 // 		])
 // 		.pipe(rename({dirname: ''}))
 // 		.pipe(gulp.dest('src/assets/css'))
-// 		.pipe(gulp.dest('tadkit/assets/css'));
+// 		.pipe(gulp.dest('dist/assets/css'));
 // });
 
 // Transfer Fonts Assets
@@ -265,14 +270,14 @@ gulp.task('assets-fonts', function() {
 	return gulp.src([
 		'src/assets/fonts/*.*'
 		])
-		.pipe(gulp.dest('tadkit/assets/fonts'));
+		.pipe(gulp.dest('dist/assets/fonts'));
 });
 // Transfer Image Assets
 gulp.task('assets-img', function() {
 	return gulp.src([
 		'src/assets/img/*.*'
 		])
-		.pipe(gulp.dest('tadkit/assets/img'));
+		.pipe(gulp.dest('dist/assets/img'));
 });
 
 // Transfer Defaults
@@ -280,14 +285,14 @@ gulp.task('assets-defaults', function() {
 	return gulp.src([
 		'src/assets/defaults/*.*'
 		])
-		.pipe(gulp.dest('tadkit/assets/defaults'));
+		.pipe(gulp.dest('dist/assets/defaults'));
 });
 // Transfer Offline
 gulp.task('assets-offline', function() {
 	return gulp.src([
 		'src/assets/offline/*.*'
 		])
-		.pipe(gulp.dest('tadkit/assets/offline'));
+		.pipe(gulp.dest('dist/assets/offline'));
 });
 // Transfer Examples
 gulp.task('assets-examples', function() {
@@ -295,7 +300,7 @@ gulp.task('assets-examples', function() {
 		'src/assets/examples/readme.txt',
 		'src/assets/examples/tk-example-*.*'
 		])
-		.pipe(gulp.dest('tadkit/assets/examples'));
+		.pipe(gulp.dest('dist/assets/examples'));
 });
 
 gulp.task('webserver', function() {
@@ -326,9 +331,8 @@ gulp.task('watch', function() {
 	], [
 		'config',
 		'lint',
-		'doc-html',
-		// 'docs-md',
-		// 'sass',
+        'docs-dgeni',
+//		'sass',
 		'dist-scripts',
 		'dist-modules',
 		'dist-vendor',
@@ -351,8 +355,7 @@ gulp.task('watch', function() {
 gulp.task('default', [
 	'config',
 	'lint',
-	'doc-html',
-	// 'docs-md',
+    'docs-dgeni',
 	'dist-scripts',
 	'dist-modules',
 	'dist-vendor',

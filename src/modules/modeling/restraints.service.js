@@ -31,9 +31,8 @@
 		return {
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Restraints#set
-			 * @methodOf modeling.service:Restraints
 			 * @kind function
 			 *
 			 * @description
@@ -70,9 +69,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Restraints#get
-			 * @methodOf modeling.service:Restraints
 			 * @kind function
 			 *
 			 * @description
@@ -116,9 +114,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Restraints#getCurrent
-			 * @methodOf modeling.service:Restraints
 			 * @kind function
 			 *
 			 * @description

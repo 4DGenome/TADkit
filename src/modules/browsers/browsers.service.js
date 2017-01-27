@@ -11,6 +11,7 @@
 	/**
 	 * @ngdoc service
 	 * @name browsers.service:BrowsersService
+     *
 	 * @description
 	 * Service loading Browser APIs for Track management
 	 *
@@ -26,16 +27,15 @@
 
 	function BrowsersService($log, $document, $q, Files) {
 
-        var browsers = {
-            
-          [
-            {},
-            {},
-            {},
-            
-            ]  
-        };
-            ["TADkit", "Genoverse", "IGVjs", "JSorolla", "BioDalliance", "jBrowse"];
+//      ["TADkit", "Genoverse", "IGVjs", "JSorolla", "BioDalliance", "jBrowse"];
+        var browsers = ["TADkit", "Genoverse", "IGVjs", "JSorolla", "BioDalliance", "jBrowse"];
+//            {
+//          [
+//            {},
+//            {},
+//            {}
+//            ]  
+//        };
         
         var defaults = {
             "browser": "default",
@@ -63,14 +63,12 @@
                 "background": "#fff",
                 "palette": ["#00A0B0", "#6A4A3C", "#CC333F", "#EB6841"],
             }
-        }
+        };
         
         return {
             /**
-			 * @ngdoc function
-			 * @name Browsers.service:Browsers#init
-			 * @methodOf Browsers.service:Browsers
-			 * @kind function
+			 * @ngdoc method
+			 * @name browsers.service:BrowsersService#init
 			 *
 			 * @description
 			 * Loads available browsers from file.
@@ -99,10 +97,8 @@
 			},
             
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name browsers.service:BrowsersService#load
-			 * @methodOf browsers.service:BrowsersService
-			 * @kind function
 			 *
 			 * @description
 			 * A function that initializes the specified browser API with the supplied config.

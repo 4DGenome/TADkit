@@ -21,7 +21,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Segments#gradientHCL
-			 * @methodOf visualization.service:Segments
 			 * @kind function
 			 *
 			 * @description
@@ -52,7 +51,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Segments#gradientComponentRGB
-			 * @methodOf visualization.service:Segments
 			 * @kind function
 			 *
 			 * @description UNUSED - 
@@ -94,7 +92,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Segments#bicolor
-			 * @methodOf visualization.service:Segments
 			 * @kind function
 			 *
 			 * @description
@@ -127,7 +124,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Segments#matrix
-			 * @methodOf visualization.service:Segments
 			 * @kind function
 			 *
 			 * @description
@@ -157,7 +153,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Segments#bicolorVariable
-			 * @methodOf visualization.service:Segments
 			 * @kind function
 			 *
 			 * @description
@@ -203,7 +198,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Segments#featureGraph
-			 * @methodOf visualization.service:Segments
 			 * @kind function
 			 *
 			 * @description
@@ -226,7 +220,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Segments#features
-			 * @methodOf visualization.service:Segments
 			 * @kind function
 			 *
 			 * @description

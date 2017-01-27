@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 	/**
-	 * @ngdoc overview
+	 * @ngdoc module
 	 * @name TADkit
 	 * @module TADkit
 	 * @description
@@ -42,7 +42,7 @@ angular.module("TADkit")
 
 .constant("NAME", "TADkit")
 
-.constant("VERSION", "0.3.0")
+.constant("VERSION", "1.0.0")
 
 .constant("ENV", "production")
 
@@ -290,10 +290,9 @@ angular.module("TADkit")
 	function App($log, $q, THREEService, THREETextures, d3Service, Settings, Components, Init) {
 
 		/**
-		 * @ngdoc function
+		 * @ngdoc method
 		 * @function
 		 * @name TADkit.service:App#load
-		 * @methodOf TADkit.service:App
 		 * @kind function
 		 *
 		 * @description
@@ -330,9 +329,8 @@ angular.module("TADkit")
 		}
 
 		/**
-		 * @ngdoc function
+		 * @ngdoc method
 		 * @name TADkit.service:App#init
-		 * @methodOf TADkit.service:App
 		 * @kind function
 		 *
 		 * @description
@@ -392,9 +390,8 @@ angular.module("TADkit")
 		return {
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#load
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -424,9 +421,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#add
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -467,9 +463,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#remove
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -486,9 +481,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#set
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -504,9 +498,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#init
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -537,9 +530,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#setViewpoint
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -576,9 +568,8 @@ angular.module("TADkit")
 			// },
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#get
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -611,9 +602,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#getComponent
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -629,9 +619,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#getComponentById
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -684,9 +673,8 @@ angular.module("TADkit")
 			// }
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#getComponentByType
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -746,9 +734,8 @@ angular.module("TADkit")
 	function Init($log, $q, Users, Projects, Datasets, Clusters, Layers, DataImport, Storyboards, Settings, Proximities, Restraints, EnsemblColors) {
 
 		/**
-		 * @ngdoc function
+		 * @ngdoc method
 		 * @name TADkit.service:Init#buildUserHierarchy
-		 * @methodOf TADkit.service:Init
 		 * @kind function
 		 *
 		 * @description
@@ -781,9 +768,8 @@ angular.module("TADkit")
 		}
 
 		/**
-		 * @ngdoc function
+		 * @ngdoc method
 		 * @name TADkit.service:Init#setDefaultDataset
-		 * @methodOf TADkit.service:Init
 		 * @kind function
 		 *
 		 * @description
@@ -820,9 +806,8 @@ angular.module("TADkit")
 		return {
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Init#defaults
-			 * @methodOf TADkit.service:Init
 			 * @kind function
 			 *
 			 * @description
@@ -1422,7 +1407,7 @@ angular.module("TADkit")
 (function () {
 	'use strict';
 	/**
-	 * @ngdoc overview
+	 * @ngdoc module
 	 * @name datasets
 	 * @module datasets
 	 * @description
@@ -1457,9 +1442,8 @@ angular.module("TADkit")
 
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#import
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description Process for importing data
@@ -1500,9 +1484,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#parse
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description Parse file data into JSON object
@@ -1521,9 +1504,8 @@ angular.module("TADkit")
 			},
 			
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#validate
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description
@@ -1570,9 +1552,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#filter
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description
@@ -1604,9 +1585,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#describe
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description
@@ -1663,9 +1643,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#create
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description Create new dataset object
@@ -1714,9 +1693,8 @@ angular.module("TADkit")
 		};
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#load
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1752,9 +1730,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#import
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1789,9 +1766,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#import
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1812,9 +1788,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#unique
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1857,9 +1832,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#add
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1879,9 +1853,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#clear
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1897,9 +1870,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#remove
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1920,9 +1892,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#set
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1939,9 +1910,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#get
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1954,9 +1924,8 @@ angular.module("TADkit")
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#getDataset			
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1970,9 +1939,8 @@ angular.module("TADkit")
 				return dataset;
 			},
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#getModel
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -1997,7 +1965,7 @@ angular.module("TADkit")
 (function () {
 	'use strict';
 	/**
-	 * @ngdoc overview
+	 * @ngdoc module
 	 * @name layers
 	 * @module layers
 	 * @description
@@ -3245,6 +3213,70 @@ angular.module("TADkit")
 })();
 (function() {
 	'use strict';
+	/**
+	 * @ngdoc directive
+	 * @name TADkit.directive:tkComponentBrowser
+	 * @restrict E
+	 *
+	 * @description
+	 * Genome track browser directive
+     * Generates tracks using the user specified browser
+     * (see Browsers module)
+	 *
+	 * @example
+	 * `<div tk-component-track-browser></div>`
+	 *
+	 */
+	angular
+		.module('TADkit')
+		.directive('tkComponentBrowser', tkComponentBrowser);
+
+	function tkComponentBrowser($log, BrowserService) {
+		return {
+			restrict: 'E',
+			templateUrl: 'assets/templates/browser.html',
+			link: function(scope, element, attrs) {
+                
+ 				var component = element[0].parentNode;
+				var componentWidth = component.clientWidth - (2 * componentMargin) - margin.left - margin.right,
+					componentHeight = trackHeight - margin.top - margin.bottom;
+
+                var config = {
+                    // browser: "default",
+                    container : element[0].firstElementChild.id,
+                    layout : {
+                        width : componentWidth,
+                        height : componentHeight,
+                        padding : scope.component.view.settings.padding,
+                    },
+                    reference : {
+                        species : scope.component.view.viewpoint.species,
+                        // ucscID: "hg19",
+                        // fastaURL: "",
+                        // cytobandURL: ""
+                    },
+                    region : {
+                        chromsome : scope.component.view.viewpoint.chromsome,
+                        chromStart : scope.component.view.viewpoint.chromStart,
+                        chromEnd : scope.component.view.chromEnd
+                    },
+                    // tracks: [],
+                    style: {
+                        color: scope.component.view.settings.color,
+                        background: scope.component.view.settings.background,
+                        palette: scope.component.view.settings.palette
+                    }
+                };
+
+                BrowserService.load(config).then(function() {
+						$log.info("Genome track browser loaded");
+				});
+			}
+		};
+	}
+})();
+(function() {
+	'use strict';
 	angular
 		.module('TADkit')
 		.controller('PanelInfoboxController', PanelInfoboxController);
@@ -4460,17 +4492,17 @@ angular.module("TADkit")
 	 * @name TADkit.directive:tkComponentTrackBarchart
 	 * @scope
 	 * @restrict EA
-	 * @param {Object} type Track type.
-	 * @param {Object} title Track title.
-	 * @param {Array} settings Track settings.
-	 * @param {Array} view Track view.
-	 * @param {Array} data Track data.
-	 * @param {Array} layer Value for toggle in template.
-	 * @param {function} togglelayer Toggle function in template.
 	 *
 	 * @description
 	 * Generates a d3 Barchart from the supplied data.
-
+	 * param {Object} type Track type.
+	 * param {Object} title Track title.
+	 * param {Array} settings Track settings.
+	 * param {Array} view Track view.
+	 * param {Array} data Track data.
+	 * param {Array} layer Value for toggle in template.
+	 * param {function} togglelayer Toggle function in template.
+     *
 	 * @example
 	 * <example>
 	 * 	<file name="index.html">
@@ -6243,9 +6275,8 @@ angular.module("TADkit")
 					});
 
 					/**
-					 * @ngdoc function
+					 * @ngdoc method
 					 * @name TADkit.directive:tkComponentWiggle0#render
-					 * @methodOf TADkit.directive:tkComponentWiggle0
 					 * @kind function
 					 *
 					 * @description
@@ -6350,9 +6381,8 @@ angular.module("TADkit")
 					};
 
 					/**
-					 * @ngdoc function
+					 * @ngdoc method
 					 * @name TADkit.directive:tkComponentWiggle0#update
-					 * @methodOf TADkit.directive:tkComponentWiggle0
 					 * @kind function
 					 *
 					 * @description

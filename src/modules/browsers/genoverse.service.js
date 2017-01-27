@@ -51,9 +51,8 @@
 
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name browsers.service:GenoverseService#load
-			 * @methodOf browsers.service:GenoverseService
 			 * @kind function
 			 *
 			 * @description

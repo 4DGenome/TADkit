@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 	/**
-	 * @ngdoc overview
+	 * @ngdoc module
 	 * @name visualization
 	 * @module visualization
 	 * @description

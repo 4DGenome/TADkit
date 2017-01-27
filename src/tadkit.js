@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 	/**
-	 * @ngdoc overview
+	 * @ngdoc module
 	 * @name TADkit
 	 * @module TADkit
 	 * @description

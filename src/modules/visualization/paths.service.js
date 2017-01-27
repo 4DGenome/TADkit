@@ -17,7 +17,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Paths#splineNearFit
-			 * @methodOf visualization.service:Paths
 			 * @kind function
 			 *
 			 * @description
@@ -45,7 +44,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Paths#spline
-			 * @methodOf visualization.service:Paths
 			 * @kind function
 			 *
 			 * @description
@@ -86,7 +84,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Paths#quadraticBezier
-			 * @methodOf visualization.service:Paths
 			 * @kind function
 			 *
 			 * @description
@@ -127,7 +124,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Paths#cubicBezier
-			 * @methodOf visualization.service:Paths
 			 * @kind function
 			 *
 			 * @description

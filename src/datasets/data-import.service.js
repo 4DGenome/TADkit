@@ -19,9 +19,8 @@
 
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#import
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description Process for importing data
@@ -62,9 +61,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#parse
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description Parse file data into JSON object
@@ -83,9 +81,8 @@
 			},
 			
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#validate
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description
@@ -132,9 +129,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#filter
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description
@@ -166,9 +162,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#describe
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description
@@ -225,9 +220,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:DataImport#create
-			 * @methodOf TADkit.service:DataImport
 			 * @kind function
 			 *
 			 * @description Create new dataset object

@@ -17,7 +17,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Networks#lineSegmentsRGB
-			 * @methodOf visualization.service:Networks
 			 * @kind function
 			 *
 			 * @description
@@ -66,7 +65,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Networks#getFeatureRGB
-			 * @methodOf visualization.service:Networks
 			 * @kind function
 			 *
 			 * @description
@@ -91,7 +89,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Networks#lineSegmentsAlpha
-			 * @methodOf visualization.service:Networks
 			 * @kind function
 			 *
 			 * @description
@@ -128,7 +125,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:Networks#getMatrixIndex
-			 * @methodOf visualization.service:Networks
 			 * @kind function
 			 *
 			 * @description

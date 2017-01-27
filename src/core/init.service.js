@@ -24,9 +24,8 @@
 	function Init($log, $q, Users, Projects, Datasets, Clusters, Layers, DataImport, Storyboards, Settings, Proximities, Restraints, EnsemblColors) {
 
 		/**
-		 * @ngdoc function
+		 * @ngdoc method
 		 * @name TADkit.service:Init#buildUserHierarchy
-		 * @methodOf TADkit.service:Init
 		 * @kind function
 		 *
 		 * @description
@@ -59,9 +58,8 @@
 		}
 
 		/**
-		 * @ngdoc function
+		 * @ngdoc method
 		 * @name TADkit.service:Init#setDefaultDataset
-		 * @methodOf TADkit.service:Init
 		 * @kind function
 		 *
 		 * @description
@@ -98,9 +96,8 @@
 		return {
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Init#defaults
-			 * @methodOf TADkit.service:Init
 			 * @kind function
 			 *
 			 * @description

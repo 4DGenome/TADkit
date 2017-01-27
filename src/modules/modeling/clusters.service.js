@@ -24,10 +24,8 @@
 		};
 		return {
 			/**
-			 * @ngdoc function
-			 * @name modeling.service:CLusters#set
-			 * @methodOf modeling.service:Clusters
-			 * @kind function
+			 * @ngdoc method
+			 * @name modeling.service:Clusters#load
 			 *
 			 * @description
 			 * Loads Datset from supplied file or default.
@@ -53,9 +51,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#groupClusters
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description
@@ -94,9 +91,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#setCluster
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description
@@ -116,9 +112,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#setCentroid
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description
@@ -136,9 +131,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#setModel
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description
@@ -158,9 +152,8 @@
 
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#getGroupedClusters
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description
@@ -173,9 +166,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#getCluster
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description
@@ -191,9 +183,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#getClusterModels
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description
@@ -209,9 +200,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#getCentroidRef
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description
@@ -227,10 +217,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#getModel
-			 * @methodOf modeling.service:Clusters
-			 * @kind function
 			 *
 			 * @description
 			 * Get model from ref or current id no ref supplied. eg. { ref:1 , data:1,2,3 }
@@ -249,9 +237,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Clusters#getModelData
-			 * @methodOf modeling.service:Clusters
 			 * @kind function
 			 *
 			 * @description

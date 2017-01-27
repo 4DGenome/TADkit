@@ -1,9 +1,16 @@
-	(function() {
+/**!
+ * Color Angular service
+ * @author  Mike Goodstadt  <mikegoodstadt@gmail.com>
+ * @version 0.0.1
+ *
+ * Module which deals with Color
+ *
+ */
+(function() {
 	'use strict';
 	/**
 	 * @ngdoc service
 	 * @name generic.service:Color
-	 * @module generic
 	 *
 	 * @description
 	 * Color processing beyond that covered by the THREEjs and d3js APIs.
@@ -37,9 +44,8 @@
 		
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name generic.service:Color#testIfHex
-			 * @methodOf generic.service:Color
 			 * @kind function
 			 *
 			 * @description
@@ -55,9 +61,8 @@
 				return isHex;
 			},
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name generic.service:Color#rgbToHex
-			 * @methodOf generic.service:Color
 			 * @kind function
 			 *
 			 * @description
@@ -77,9 +82,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name generic.service:Color#nameToHex
-			 * @methodOf generic.service:Color
 			 * @kind function
 			 *
 			 * @description
@@ -113,9 +117,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name generic.service:Color#THREEColorsFromHex
-			 * @methodOf generic.service:Color
 			 * @kind function
 			 *
 			 * @description
@@ -135,9 +138,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name generic.service:Color#vertexColorsFromTHREEColors
-			 * @methodOf generic.service:Color
 			 * @kind function
 			 *
 			 * @description

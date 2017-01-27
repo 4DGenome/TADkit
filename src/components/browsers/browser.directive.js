@@ -53,7 +53,7 @@
                         background: scope.component.view.settings.background,
                         palette: scope.component.view.settings.palette
                     }
-                }
+                };
 
                 BrowserService.load(config).then(function() {
 						$log.info("Genome track browser loaded");

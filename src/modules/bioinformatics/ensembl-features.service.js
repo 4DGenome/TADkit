@@ -27,15 +27,14 @@
 		return {
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name bioinformatics.service:FeaturesEnsembl#ping
-			 * @methodOf bioinformatics.service:FeaturesEnsembl
 			 * @kind function
 			 *
 			 * @description
 			 * Ping the Ensebl server to check if it is online
 			 * Use before requesting data.
-			 * @link https://github.com/Ensembl/ensembl-rest/wiki/Writing-Your-First-Client
+			 * https://github.com/Ensembl/ensembl-rest/wiki/Writing-Your-First-Client
 			 *
 			 * @return {boolean} Online status.
 			 */
@@ -59,9 +58,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name bioinformatics.service:FeaturesEnsembl#load
-			 * @methodOf bioinformatics.service:FeaturesEnsembl
 			 * @kind function
 			 *
 			 * @description
@@ -99,9 +97,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name bioinformatics.service:FeaturesEnsembl#setBiotypeStyle
-			 * @methodOf bioinformatics.service:FeaturesEnsembl
 			 * @kind function
 			 *
 			 * @description
@@ -123,9 +120,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name bioinformatics.service:FeaturesEnsembl#setLengthBP
-			 * @methodOf bioinformatics.service:FeaturesEnsembl
 			 * @kind function
 			 *
 			 * @description
@@ -148,9 +144,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name bioinformatics.service:FeaturesEnsembl#get
-			 * @methodOf bioinformatics.service:FeaturesEnsembl
 			 * @kind function
 			 *
 			 * @description

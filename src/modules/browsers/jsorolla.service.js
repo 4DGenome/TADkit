@@ -24,9 +24,8 @@
 	function JsorollaService($log, $q, Files) {
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name browsers.service:JsorollaService#load
-			 * @methodOf browsers.service:JsorollaService
 			 * @kind function
 			 *
 			 * @description

@@ -1,9 +1,16 @@
+/**!
+ * Util Angular service
+ * @author  Mike Goodstadt  <mikegoodstadt@gmail.com>
+ * @version 0.0.1
+ *
+ * Module which deals with Color
+ *
+ */
 (function() {
 	'use strict';
 	/**
 	 * @ngdoc service
 	 * @name generic.service:Utils
-	 * @module generic
 	 *
 	 * @description
 	 * Generic javascript utilities.
@@ -16,14 +23,12 @@
 	function Utils() {
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name generic.service:Utils#whatIsIt
-			 * @methodOf generic.service:Utils
-			 * @kind function
 			 *
 			 * @description
 			 * A function that detrmines the type of object being passed.
-			 * @link http://stackoverflow.com/a/11183002/1667410
+			 * http://stackoverflow.com/a/11183002/1667410
 			 *
 			 * @param {Object} value to be returned.
 			 * @returns {string} description of object type

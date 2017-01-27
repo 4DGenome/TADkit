@@ -26,9 +26,8 @@
 		return {
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#load
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -58,9 +57,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#add
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -101,9 +99,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#remove
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -120,9 +117,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#set
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -138,9 +134,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#init
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -171,9 +166,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#setViewpoint
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -210,9 +204,8 @@
 			// },
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#get
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -245,9 +238,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#getComponent
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -263,9 +255,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#getComponentById
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description
@@ -318,9 +309,8 @@
 			// }
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Components#getComponentByType
-			 * @methodOf TADkit.service:Components
 			 * @kind function
 			 *
 			 * @description

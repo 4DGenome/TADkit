@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc service
 	 * @name generic.service:Files
-	 * @module generic
 	 *
 	 * @description
 	 * File utilities.
@@ -16,9 +15,8 @@
 	function Files($log, $rootScope, $document, $q, $http) {
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name generic.service:Files#appendToHTML
-			 * @methodOf generic.service:Files
 			 * @kind function
 			 *
 			 * @description

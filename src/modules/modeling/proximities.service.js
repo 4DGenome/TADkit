@@ -28,9 +28,8 @@
 		return {
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Proximities#set
-			 * @methodOf modeling.service:Proximities
 			 * @kind function
 			 *
 			 * @description
@@ -119,9 +118,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Proximities#getMaxDistance
-			 * @methodOf modeling.service:Proximities
 			 * @kind function
 			 *
 			 * @description
@@ -142,9 +140,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Proximities#get
-			 * @methodOf modeling.service:Proximities
 			 * @kind function
 			 *
 			 * @description
@@ -168,9 +165,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name modeling.service:Proximities#getCurrent
-			 * @methodOf modeling.service:Proximities
 			 * @kind function
 			 *
 			 * @description

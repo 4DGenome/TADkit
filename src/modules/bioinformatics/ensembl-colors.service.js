@@ -22,9 +22,8 @@
 		return {
 			
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name bioinformatics.service:EnsemblColors#load
-			 * @methodOf bioinformatics.service:EnsemblColors
 			 * @kind function
 			 *
 			 * @description
@@ -59,9 +58,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name bioinformatics.service:EnsemblColors#get
-			 * @methodOf bioinformatics.service:EnsemblColors
 			 * @kind function
 			 *
 			 * @description
@@ -79,18 +77,17 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name bioinformatics.service:EnsemblColors#colorsFromIni
-			 * @methodOf bioinformatics.service:EnsemblColors
 			 * @kind function
 			 *
 			 * @description
 			 * Extract colors from (Ensembl) INI files
 			 * For example:
-			 * @link https://raw.githubusercontent.com/Ensembl/ensembl-webcode/release/75/conf/ini-files/COLOUR.ini
-			 * @link https://cdn.rawgit.com/Ensembl/ensembl-webcode/release/75/conf/ini-files/COLOUR.ini
+			 * https://raw.githubusercontent.com/Ensembl/ensembl-webcode/release/75/conf/ini-files/COLOUR.ini
+			 * https://cdn.rawgit.com/Ensembl/ensembl-webcode/release/75/conf/ini-files/COLOUR.ini
 			 * or in TADkit:
-			 * @link assets/defaults/ensembl-webcode-COLOUR.ini
+			 * assets/defaults/ensembl-webcode-COLOUR.ini
 			 *
 			 * @param {number} text data.
 			 * @return {Object} Generate 'colors list' Object from INI data.

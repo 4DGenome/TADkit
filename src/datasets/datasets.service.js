@@ -24,9 +24,8 @@
 		};
 		return {
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#load
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -62,9 +61,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#import
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -99,9 +97,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#import
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -122,9 +119,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#unique
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -167,9 +163,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#add
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -189,9 +184,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#clear
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -207,9 +201,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#remove
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -230,9 +223,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#set
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -249,9 +241,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#get
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -264,9 +255,8 @@
 			},
 
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#getDataset			
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description
@@ -280,9 +270,8 @@
 				return dataset;
 			},
 			/**
-			 * @ngdoc function
+			 * @ngdoc method
 			 * @name TADkit.service:Datasets#getModel
-			 * @methodOf TADkit.service:Datasets
 			 * @kind function
 			 *
 			 * @description

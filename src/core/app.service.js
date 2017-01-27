@@ -20,10 +20,9 @@
 	function App($log, $q, THREEService, THREETextures, d3Service, Settings, Components, Init) {
 
 		/**
-		 * @ngdoc function
+		 * @ngdoc method
 		 * @function
 		 * @name TADkit.service:App#load
-		 * @methodOf TADkit.service:App
 		 * @kind function
 		 *
 		 * @description
@@ -60,9 +59,8 @@
 		}
 
 		/**
-		 * @ngdoc function
+		 * @ngdoc method
 		 * @name TADkit.service:App#init
-		 * @methodOf TADkit.service:App
 		 * @kind function
 		 *
 		 * @description

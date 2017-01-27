@@ -5,17 +5,17 @@
 	 * @name TADkit.directive:tkComponentTrackBarchart
 	 * @scope
 	 * @restrict EA
-	 * @param {Object} type Track type.
-	 * @param {Object} title Track title.
-	 * @param {Array} settings Track settings.
-	 * @param {Array} view Track view.
-	 * @param {Array} data Track data.
-	 * @param {Array} layer Value for toggle in template.
-	 * @param {function} togglelayer Toggle function in template.
 	 *
 	 * @description
 	 * Generates a d3 Barchart from the supplied data.
-
+	 * param {Object} type Track type.
+	 * param {Object} title Track title.
+	 * param {Array} settings Track settings.
+	 * param {Array} view Track view.
+	 * param {Array} data Track data.
+	 * param {Array} layer Value for toggle in template.
+	 * param {function} togglelayer Toggle function in template.
+     *
 	 * @example
 	 * <example>
 	 * 	<file name="index.html">

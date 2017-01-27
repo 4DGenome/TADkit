@@ -17,7 +17,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:PathControls#simple
-			 * @methodOf visualization.service:PathControls
 			 * @kind function
 			 *
 			 * @description
@@ -77,7 +76,6 @@
 			/**
 			 * @ngdocs function
 			 * @name visualization.service:PathControls#cubic
-			 * @methodOf visualization.service:PathControls
 			 * @kind function
 			 *
 			 * @description

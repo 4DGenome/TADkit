@@ -112,9 +112,8 @@
 					});
 
 					/**
-					 * @ngdoc function
+					 * @ngdoc method
 					 * @name TADkit.directive:tkComponentWiggle0#render
-					 * @methodOf TADkit.directive:tkComponentWiggle0
 					 * @kind function
 					 *
 					 * @description
@@ -219,9 +218,8 @@
 					};
 
 					/**
-					 * @ngdoc function
+					 * @ngdoc method
 					 * @name TADkit.directive:tkComponentWiggle0#update
-					 * @methodOf TADkit.directive:tkComponentWiggle0
 					 * @kind function
 					 *
 					 * @description
