@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:LayerAnnotations
+	 * @name LayerAnnotations
+     * @module layers
 	 * @description Layers to within a Project to be used in a Storyboard.
 	 *  This Layer is equivalent to UCSC custom tack data file format which
 	 * consists of Browser, Track and Data sections. See...

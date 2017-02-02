@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name visualization.service:Paths
+	 * @name Paths
+     * @module visualization
 	 * @description
 	 * Generate 3D paths from set of control vertices.
 	 *
@@ -16,7 +17,7 @@
 			
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Paths#splineNearFit
+			 * @name Paths#splineNearFit
 			 * @kind function
 			 *
 			 * @description
@@ -43,7 +44,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Paths#spline
+			 * @name Paths#spline
 			 * @kind function
 			 *
 			 * @description
@@ -83,7 +84,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Paths#quadraticBezier
+			 * @name Paths#quadraticBezier
 			 * @kind function
 			 *
 			 * @description
@@ -123,7 +124,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Paths#cubicBezier
+			 * @name Paths#cubicBezier
 			 * @kind function
 			 *
 			 * @description

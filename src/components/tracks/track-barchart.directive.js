@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentTrackBarchart
+	 * @name tkComponentTrackBarchart
+     * @module TADkit
 	 * @scope
 	 * @restrict EA
 	 *

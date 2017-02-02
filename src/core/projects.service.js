@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Projects
+	 * @name Projects
+     * @module TADkit
 	 * @description Projects of Users.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log

@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowserBiodalliance
+	 * @name tkComponentBrowserBiodalliance
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description

@@ -3,7 +3,7 @@
 	/**
 	 * @ngdoc module
 	 * @name datasets
-	 * @module datasets
+     * @module TADkit
 	 * @description
 	 * Datasets Module
 	 * Contains datasets scripts which are essential to the TADkit App.

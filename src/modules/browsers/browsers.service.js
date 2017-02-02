@@ -10,8 +10,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name browsers.service:BrowsersService
-     *
+	 * @name BrowsersService
+     * @module browsers
 	 * @description
 	 * Service loading Browser APIs for Track management
 	 *

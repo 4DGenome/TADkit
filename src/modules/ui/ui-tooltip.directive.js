@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name ui.directive:uiTooltip
+	 * @name uiTooltip
+     * @module ui
 	 * @scope
 	 * @restrict EA
 	 *

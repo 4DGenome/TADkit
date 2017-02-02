@@ -2,8 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name generic.service:Files
-	 *
+	 * @name Files
+	 * @module generic
 	 * @description
 	 * File utilities.
 	 *
@@ -16,7 +16,8 @@
 		return {
 			/**
 			 * @ngdoc method
-			 * @name generic.service:Files#appendToHTML
+			 * @name Files#appendToHTML
+             * @module generic
 			 * @kind function
 			 *
 			 * @description

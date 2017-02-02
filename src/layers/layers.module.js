@@ -3,7 +3,7 @@
 	/**
 	 * @ngdoc module
 	 * @name layers
-	 * @module layers
+     * @module TADkit
 	 * @description
 	 * Layers Module
 	 * Contains layers scripts which are essential to the TADkit App.

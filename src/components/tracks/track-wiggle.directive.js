@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentWiggle0
+	 * @name tkComponentWiggle0
+     * @module TADkit
 	 * @scope
 	 * @restrict EA
 	 *
@@ -113,7 +114,7 @@
 
 					/**
 					 * @ngdoc method
-					 * @name TADkit.directive:tkComponentWiggle0#render
+					 * @name TADkit.tkComponentWiggle0#render
 					 * @kind function
 					 *
 					 * @description
@@ -219,7 +220,7 @@
 
 					/**
 					 * @ngdoc method
-					 * @name TADkit.directive:tkComponentWiggle0#update
+					 * @name TADkit.tkComponentWiggle0#update
 					 * @kind function
 					 *
 					 * @description

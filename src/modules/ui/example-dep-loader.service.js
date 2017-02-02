@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name ui.service:uiTooltipService
+	 * @name uiTooltipService
+     * @module ui
 	 * @description uiTooltip loads CSS
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log

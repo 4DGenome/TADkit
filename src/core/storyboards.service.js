@@ -2,15 +2,16 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Storyboards
+	 * @name Storyboards
+     * @module TADkit
 	 * @description Storyboards of Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$http
 	 * @requires https://github.com/monicao/angular-uuid4
-	 * @requires TADkit.service:Settings
-	 * @requires TADkit.service:Components
+	 * @requires TADkit.Settings
+	 * @requires TADkit.Components
 	 *
 	 */
 	angular

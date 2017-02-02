@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Settings
+	 * @name Settings
+     * @module TADkit
 	 * @description Settings of App.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log

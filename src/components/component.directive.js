@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponent
+	 * @name tkComponent
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description

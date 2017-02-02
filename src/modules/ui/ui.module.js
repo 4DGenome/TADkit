@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc module
 	 * @name ui
-	 * @module ui
 	 * @description
 	 * UI Module
 	 * User Interface compoments

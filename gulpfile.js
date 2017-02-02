@@ -5,9 +5,6 @@ var gulp = require('gulp');
 var cleanCss = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var dgeni = require('dgeni');
-//var dgeni = require('gulp-dgeni');
-//var doctoc = require('gulp-doctoc');
-//var marked = require('gulp-marked');
 var header = require('gulp-header');
 // var jscs = require('gulp-jscs');
 var jshint = require('gulp-jshint');
@@ -64,23 +61,6 @@ gulp.task('docs-dgeni', function() {
     var docs = new dgeni([require('./docs/config')]);
     return docs.generate();
 });
-
-//gulp.task('docs-dgeni', function () {
-//    return gulp.src([
-//        'src/**/*.js',
-//        '!src/assets/**/*.js'
-//    ])
-//    .pipe(dgeni({packages: [ngdoc]}))
-//    .pipe(gulp.dest('docs/test'));
-//});
-    
-//gulp.task('markdown', function(){
-//  gulp.src('docs/**/*.md')
-//    .pipe(doctoc())
-//    .pipe(marked())
-//    .pipe(gulp.dest('docs/marked'));
-//
-//});
 
 // Concatenate & Minify TADkit JS
 gulp.task('dist-scripts', function() {

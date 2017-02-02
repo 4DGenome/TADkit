@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc module
 	 * @name TADkit
-	 * @module TADkit
 	 * @description
 	 * Main module for TADkit app.
 	 *
@@ -268,20 +267,21 @@ angular.module("TADkit")
 		});
 	}
 })();
-(function() {
+    (function() {
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:App
+	 * @name App
+	 * @module TADkit
 	 * @description Load app and initialize.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://github.com/3DGenomes/angular-threejs
 	 * @requires https://github.com/3DGenomes/angular-d3js
-	 * @requires TADkit.service:Settings
-	 * @requires TADkit.service:Components
-	 * @requires TADkit.service:Init
+	 * @requires TADkit.Settings
+	 * @requires TADkit.Components
+	 * @requires TADkit.Init
 	 */
 	angular
 		.module('TADkit')
@@ -292,7 +292,7 @@ angular.module("TADkit")
 		/**
 		 * @ngdoc method
 		 * @function
-		 * @name TADkit.service:App#load
+		 * @name TADkit.App#load
 		 * @kind function
 		 *
 		 * @description
@@ -330,7 +330,7 @@ angular.module("TADkit")
 
 		/**
 		 * @ngdoc method
-		 * @name TADkit.service:App#init
+		 * @name TADkit.App#init
 		 * @kind function
 		 *
 		 * @description
@@ -366,7 +366,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Components
+	 * @name Components
+     * @module TADkit
 	 * @description Components for Storyboards.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -391,7 +392,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#load
+			 * @name TADkit.Components#load
 			 * @kind function
 			 *
 			 * @description
@@ -422,7 +423,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#add
+			 * @name TADkit.Components#add
 			 * @kind function
 			 *
 			 * @description
@@ -464,7 +465,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#remove
+			 * @name TADkit.Components#remove
 			 * @kind function
 			 *
 			 * @description
@@ -482,7 +483,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#set
+			 * @name TADkit.Components#set
 			 * @kind function
 			 *
 			 * @description
@@ -499,7 +500,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#init
+			 * @name TADkit.Components#init
 			 * @kind function
 			 *
 			 * @description
@@ -531,7 +532,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#setViewpoint
+			 * @name TADkit.Components#setViewpoint
 			 * @kind function
 			 *
 			 * @description
@@ -569,7 +570,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#get
+			 * @name TADkit.Components#get
 			 * @kind function
 			 *
 			 * @description
@@ -603,7 +604,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#getComponent
+			 * @name TADkit.Components#getComponent
 			 * @kind function
 			 *
 			 * @description
@@ -620,7 +621,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#getComponentById
+			 * @name TADkit.Components#getComponentById
 			 * @kind function
 			 *
 			 * @description
@@ -674,7 +675,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#getComponentByType
+			 * @name TADkit.Components#getComponentByType
 			 * @kind function
 			 *
 			 * @description
@@ -712,19 +713,20 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Init
+	 * @name Init
+     * @module TADkit
 	 * @description Initialize default Objects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
-	 * @requires TADkit.service:Users
-	 * @requires TADkit.service:Projects
-	 * @requires TADkit.service:Datasets
-	 * @requires TADkit.service:Layers
-	 * @requires TADkit.service:Storyboards
-	 * @requires TADkit.service:Proximities
-	 * @requires TADkit.service:Restraints
-	 * @requires TADkit.service:EnsemblColors
+	 * @requires TADkit.Users
+	 * @requires TADkit.Projects
+	 * @requires TADkit.Datasets
+	 * @requires TADkit.Layers
+	 * @requires TADkit.Storyboards
+	 * @requires modeling.Proximities
+	 * @requires modeling.Restraints
+	 * @requires bioinformatics.EnsemblColors
 	 *
 	 */
 	angular
@@ -735,18 +737,18 @@ angular.module("TADkit")
 
 		/**
 		 * @ngdoc method
-		 * @name TADkit.service:Init#buildUserHierarchy
+		 * @name TADkit.Init#buildUserHierarchy
 		 * @kind function
 		 *
 		 * @description
 		 * Build app Object hierarchy ie. User > Projects > [Datasets | Layers | Storyboards]
 		 *
 		 * @requires $log
-		 * @requires TADkit.service:Users
-		 * @requires TADkit.service:Projects
-		 * @requires TADkit.service:Datasets
-		 * @requires TADkit.service:Layers
-		 * @requires TADkit.service:Storyboards
+		 * @requires TADkit.Users
+		 * @requires TADkit.Projects
+		 * @requires TADkit.Datasets
+		 * @requires TADkit.Layers
+		 * @requires TADkit.Storyboards
 		 *
 		 */
 		function buildUX() {
@@ -769,17 +771,17 @@ angular.module("TADkit")
 
 		/**
 		 * @ngdoc method
-		 * @name TADkit.service:Init#setDefaultDataset
+		 * @name TADkit.Init#setDefaultDataset
 		 * @kind function
 		 *
 		 * @description
 		 * Set default dataset.
 		 *
 		 * @requires $log
-		 * @requires TADkit.service:Datasets
-		 * @requires TADkit.service:Proximities
-		 * @requires TADkit.service:Restraints
-		 * @requires TADkit.service:EnsemblColors
+		 * @requires TADkit.Datasets
+		 * @requires TADkit.Proximities
+		 * @requires TADkit.Restraints
+		 * @requires TADkit.EnsemblColors
 		 *
 		 */
 		function setDefaultDataset() {
@@ -807,18 +809,18 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Init#defaults
+			 * @name TADkit.Init#defaults
 			 * @kind function
 			 *
 			 * @description
 			 * Initalizes appw.
 			 *
 			 * @requires $log
-			 * @requires TADkit.service:Users
-			 * @requires TADkit.service:Projects
-			 * @requires TADkit.service:Datasets
-			 * @requires TADkit.service:Datasets
-			 * @requires TADkit.service:EnsemblColors
+			 * @requires TADkit.Users
+			 * @requires TADkit.Projects
+			 * @requires TADkit.Datasets
+			 * @requires TADkit.Datasets
+			 * @requires TADkit.EnsemblColors
 			 *
 			 * @returns {Object} All loaded defaults.
 			 */
@@ -847,7 +849,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Projects
+	 * @name Projects
+     * @module TADkit
 	 * @description Projects of Users.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -938,7 +941,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Settings
+	 * @name Settings
+     * @module TADkit
 	 * @description Settings of App.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -1080,15 +1084,16 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Storyboards
+	 * @name Storyboards
+     * @module TADkit
 	 * @description Storyboards of Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$http
 	 * @requires https://github.com/monicao/angular-uuid4
-	 * @requires TADkit.service:Settings
-	 * @requires TADkit.service:Components
+	 * @requires TADkit.Settings
+	 * @requires TADkit.Components
 	 *
 	 */
 	angular
@@ -1318,7 +1323,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Users
+	 * @name Users
+     * @module TADkit
 	 * @description Users of App.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -1409,7 +1415,7 @@ angular.module("TADkit")
 	/**
 	 * @ngdoc module
 	 * @name datasets
-	 * @module datasets
+     * @module TADkit
 	 * @description
 	 * Datasets Module
 	 * Contains datasets scripts which are essential to the TADkit App.
@@ -1425,7 +1431,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:DataImport
+	 * @name DataImport
+     * @module TADkit
 	 * @description Import datasets to Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -1443,7 +1450,7 @@ angular.module("TADkit")
 		return {
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#import
+			 * @name TADkit.DataImport#import
 			 * @kind function
 			 *
 			 * @description Process for importing data
@@ -1485,7 +1492,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#parse
+			 * @name TADkit.DataImport#parse
 			 * @kind function
 			 *
 			 * @description Parse file data into JSON object
@@ -1505,7 +1512,7 @@ angular.module("TADkit")
 			
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#validate
+			 * @name TADkit.DataImport#validate
 			 * @kind function
 			 *
 			 * @description
@@ -1553,7 +1560,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#filter
+			 * @name TADkit.DataImport#filter
 			 * @kind function
 			 *
 			 * @description
@@ -1586,7 +1593,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#describe
+			 * @name TADkit.DataImport#describe
 			 * @kind function
 			 *
 			 * @description
@@ -1644,7 +1651,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#create
+			 * @name TADkit.DataImport#create
 			 * @kind function
 			 *
 			 * @description Create new dataset object
@@ -1671,7 +1678,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Datasets
+	 * @name Datasets
+     * @module TADkit
 	 * @description Datasets of Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -1694,7 +1702,7 @@ angular.module("TADkit")
 		return {
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#load
+			 * @name TADkit.Datasets#load
 			 * @kind function
 			 *
 			 * @description
@@ -1731,7 +1739,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#import
+			 * @name TADkit.Datasets#import
 			 * @kind function
 			 *
 			 * @description
@@ -1767,7 +1775,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#import
+			 * @name TADkit.Datasets#import
 			 * @kind function
 			 *
 			 * @description
@@ -1789,7 +1797,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#unique
+			 * @name TADkit.Datasets#unique
 			 * @kind function
 			 *
 			 * @description
@@ -1833,7 +1841,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#add
+			 * @name TADkit.Datasets#add
 			 * @kind function
 			 *
 			 * @description
@@ -1854,7 +1862,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#clear
+			 * @name TADkit.Datasets#clear
 			 * @kind function
 			 *
 			 * @description
@@ -1871,7 +1879,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#remove
+			 * @name TADkit.Datasets#remove
 			 * @kind function
 			 *
 			 * @description
@@ -1893,7 +1901,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#set
+			 * @name TADkit.Datasets#set
 			 * @kind function
 			 *
 			 * @description
@@ -1911,7 +1919,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#get
+			 * @name TADkit.Datasets#get
 			 * @kind function
 			 *
 			 * @description
@@ -1925,7 +1933,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#getDataset			
+			 * @name TADkit.Datasets#getDataset			
 			 * @kind function
 			 *
 			 * @description
@@ -1940,7 +1948,7 @@ angular.module("TADkit")
 			},
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Datasets#getModel
+			 * @name TADkit.Datasets#getModel
 			 * @kind function
 			 *
 			 * @description
@@ -1967,7 +1975,7 @@ angular.module("TADkit")
 	/**
 	 * @ngdoc module
 	 * @name layers
-	 * @module layers
+     * @module TADkit
 	 * @description
 	 * Layers Module
 	 * Contains layers scripts which are essential to the TADkit App.
@@ -1983,7 +1991,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:LayerAnnotations
+	 * @name LayerAnnotations
+     * @module layers
 	 * @description Layers to within a Project to be used in a Storyboard.
 	 *  This Layer is equivalent to UCSC custom tack data file format which
 	 * consists of Browser, Track and Data sections. See...
@@ -2137,8 +2146,9 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Annotations
-	 * @description Tempalate for Layer to within TADkit
+	 * @name Annotations
+     * @module layers
+	 * @description Template for Layer to within TADkit
 	 * This template structure is equivalent to UCSC custom
 	 * track data file format of Browser, Track and Data.
 	 *
@@ -2177,19 +2187,20 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Layers
+	 * @name Layers
+     * @module layers
 	 * @description Layers of Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$http
 	 * @requires https://github.com/monicao/angular-uuid4
-	 * @requires TADkit.service:Settings
-	 * @requires TADkit.service:Storyboards
-	 * @requires TADkit.service:FeaturesEnsembl
-	 * @requires TADkit.service:EnsemblColors
-	 * @requires TADkit.service:Segments
-	 * @requires TADkit.service:Networks
+	 * @requires TADkit.Settings
+	 * @requires TADkit.Storyboards
+	 * @requires bioinformatics.FeaturesEnsembl
+	 * @requires bioinformatics.EnsemblColors
+	 * @requires visualization.Segments
+	 * @requires visualization.Networks
 	 *
 	 */
 	angular
@@ -2577,7 +2588,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponent
+	 * @name tkComponent
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description
@@ -2631,7 +2643,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowserBiodalliance
+	 * @name tkComponentBrowserBiodalliance
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description
@@ -2704,7 +2717,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowserGenoverse
+	 * @name tkComponentBrowserGenoverse
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description
@@ -2757,7 +2771,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowserJsorolla
+	 * @name tkComponentBrowserJsorolla
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description
@@ -2906,7 +2921,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowserJsorolla
+	 * @name tkComponentBrowserJsorolla
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description
@@ -3215,7 +3231,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowser
+	 * @name tkComponentBrowser
+     * @module TADkit
 	 * @restrict E
 	 *
 	 * @description
@@ -4489,7 +4506,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentTrackBarchart
+	 * @name tkComponentTrackBarchart
+     * @module TADkit
 	 * @scope
 	 * @restrict EA
 	 *
@@ -6165,7 +6183,8 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentWiggle0
+	 * @name tkComponentWiggle0
+     * @module TADkit
 	 * @scope
 	 * @restrict EA
 	 *
@@ -6276,7 +6295,7 @@ angular.module("TADkit")
 
 					/**
 					 * @ngdoc method
-					 * @name TADkit.directive:tkComponentWiggle0#render
+					 * @name TADkit.tkComponentWiggle0#render
 					 * @kind function
 					 *
 					 * @description
@@ -6382,7 +6401,7 @@ angular.module("TADkit")
 
 					/**
 					 * @ngdoc method
-					 * @name TADkit.directive:tkComponentWiggle0#update
+					 * @name TADkit.tkComponentWiggle0#update
 					 * @kind function
 					 *
 					 * @description

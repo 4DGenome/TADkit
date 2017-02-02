@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:DataImport
+	 * @name DataImport
+     * @module TADkit
 	 * @description Import datasets to Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -20,7 +21,7 @@
 		return {
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#import
+			 * @name TADkit.DataImport#import
 			 * @kind function
 			 *
 			 * @description Process for importing data
@@ -62,7 +63,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#parse
+			 * @name TADkit.DataImport#parse
 			 * @kind function
 			 *
 			 * @description Parse file data into JSON object
@@ -82,7 +83,7 @@
 			
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#validate
+			 * @name TADkit.DataImport#validate
 			 * @kind function
 			 *
 			 * @description
@@ -130,7 +131,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#filter
+			 * @name TADkit.DataImport#filter
 			 * @kind function
 			 *
 			 * @description
@@ -163,7 +164,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#describe
+			 * @name TADkit.DataImport#describe
 			 * @kind function
 			 *
 			 * @description
@@ -221,7 +222,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:DataImport#create
+			 * @name TADkit.DataImport#create
 			 * @kind function
 			 *
 			 * @description Create new dataset object

@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name modeling.service:Restraints
+	 * @name Restraints
+     * @module modeling
 	 * @description
 	 * Restraints for Modeling.
 	 *
@@ -32,7 +33,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Restraints#set
+			 * @name Restraints#set
 			 * @kind function
 			 *
 			 * @description
@@ -70,7 +71,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Restraints#get
+			 * @name Restraints#get
 			 * @kind function
 			 *
 			 * @description
@@ -115,7 +116,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Restraints#getCurrent
+			 * @name Restraints#getCurrent
 			 * @kind function
 			 *
 			 * @description

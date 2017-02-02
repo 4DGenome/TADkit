@@ -12,11 +12,11 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name browsers.service:GenoverseService
+	 * @name GenoverseService
+     * @module browsers
 	 * @description
 	 * Service loading Genoverse for Track management
 	 *
-	 * @requires ONLINE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 *
@@ -52,7 +52,7 @@
 		return {
 			/**
 			 * @ngdoc method
-			 * @name browsers.service:GenoverseService#load
+			 * @name GenoverseService#load
 			 * @kind function
 			 *
 			 * @description

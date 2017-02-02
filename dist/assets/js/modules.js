@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc module
 	 * @name generic
-	 * @module generic
 	 * @description
 	 * Generic Module
 	 * Contains generic scripts which are not available on Bower
@@ -28,7 +27,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name generic.service:Color
+	 * @name Color
+     * @module generic
 	 *
 	 * @description
 	 * Color processing beyond that covered by the THREEjs and d3js APIs.
@@ -193,8 +193,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name generic.service:Files
-	 *
+	 * @name Files
+	 * @module generic
 	 * @description
 	 * File utilities.
 	 *
@@ -207,7 +207,8 @@
 		return {
 			/**
 			 * @ngdoc method
-			 * @name generic.service:Files#appendToHTML
+			 * @name Files#appendToHTML
+             * @module generic
 			 * @kind function
 			 *
 			 * @description
@@ -301,8 +302,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name generic.service:Utils
-	 *
+	 * @name Utils
+	 * @module generic
 	 * @description
 	 * Generic javascript utilities.
 	 *
@@ -355,7 +356,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name generic.directive:routeCssClassnames
+	 * @name routeCssClassnames
+     * @module generic
 	 * @scope
 	 * @restrict A
 	 * @element body
@@ -401,7 +403,6 @@
 	/**
 	 * @ngdoc module
 	 * @name ui
-	 * @module ui
 	 * @description
 	 * UI Module
 	 * User Interface compoments
@@ -418,7 +419,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name ui.service:uiTooltipService
+	 * @name uiTooltipService
+     * @module ui
 	 * @description uiTooltip loads CSS
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -612,7 +614,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name ui.directive:uiTooltip
+	 * @name uiTooltip
+     * @module ui
 	 * @scope
 	 * @restrict EA
 	 *
@@ -679,7 +682,6 @@
 	/**
 	 * @ngdoc module
 	 * @name bioinformatics
-	 * @module bioinformatics
 	 * @description
 	 * Bioinformatics Module
 	 * Contains scripts which facilitate Bioinformatics
@@ -695,11 +697,11 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name bioinformatics.service:EnsemblColors
+	 * @name EnsemblColors
+     * @module bioinformatics
 	 * @description
 	 * Import and manage Genomic feature colors (eg. genes) from Ensembl etc.
 	 *
-	 * @requires ONLINE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$http
@@ -716,7 +718,7 @@
 			
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:EnsemblColors#load
+			 * @name EnsemblColors#load
 			 * @kind function
 			 *
 			 * @description
@@ -752,7 +754,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:EnsemblColors#get
+			 * @name EnsemblColors#get
 			 * @kind function
 			 *
 			 * @description
@@ -771,7 +773,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:EnsemblColors#colorsFromIni
+			 * @name EnsemblColors#colorsFromIni
 			 * @kind function
 			 *
 			 * @description
@@ -826,11 +828,11 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name bioinformatics.service:FeaturesEnsembl
+	 * @name FeaturesEnsembl
+     * @module bioinformatics
 	 * @description
 	 * Import and manage Genomic features (eg. genes) from Ensembl etc.
 	 *
-	 * @requires ONLINE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$http
@@ -852,7 +854,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#ping
+			 * @name FeaturesEnsembl#ping
 			 * @kind function
 			 *
 			 * @description
@@ -883,7 +885,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#load
+			 * @name FeaturesEnsembl#load
 			 * @kind function
 			 *
 			 * @description
@@ -922,7 +924,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#setBiotypeStyle
+			 * @name FeaturesEnsembl#setBiotypeStyle
 			 * @kind function
 			 *
 			 * @description
@@ -945,7 +947,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#setLengthBP
+			 * @name FeaturesEnsembl#setLengthBP
 			 * @kind function
 			 *
 			 * @description
@@ -969,7 +971,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#get
+			 * @name FeaturesEnsembl#get
 			 * @kind function
 			 *
 			 * @description
@@ -989,7 +991,6 @@
 	/**
 	 * @ngdoc module
 	 * @name browsers
-	 * @module browsers
 	 * @description
 	 * Bowsers Module
 	 * Contains generic scripts which are not available on Bower
@@ -1014,8 +1015,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name browsers.service:BrowsersService
-     *
+	 * @name BrowsersService
+     * @module browsers
 	 * @description
 	 * Service loading Browser APIs for Track management
 	 *
@@ -1158,11 +1159,11 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name browsers.service:GenoverseService
+	 * @name GenoverseService
+     * @module browsers
 	 * @description
 	 * Service loading Genoverse for Track management
 	 *
-	 * @requires ONLINE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 *
@@ -1198,7 +1199,7 @@
 		return {
 			/**
 			 * @ngdoc method
-			 * @name browsers.service:GenoverseService#load
+			 * @name GenoverseService#load
 			 * @kind function
 			 *
 			 * @description
@@ -1243,11 +1244,11 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name browsers.service:JsorollaService
+	 * @name JsorollaService
+     * @module browsers
 	 * @description
 	 * Service loading JSorolla for Track management
 	 *
-	 * @requires ONLINE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 *
@@ -1260,7 +1261,7 @@
 		return {
 			/**
 			 * @ngdoc method
-			 * @name browsers.service:JsorollaService#load
+			 * @name JsorollaService#load
 			 * @kind function
 			 *
 			 * @description
@@ -1308,7 +1309,6 @@
 	/**
 	 * @ngdoc module
 	 * @name modeling
-	 * @module modeling
 	 * @description
 	 * Modeling Module
 	 * Contains scripts for (spatia) Modeling
@@ -1324,7 +1324,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name modeling.service:Clusters
+	 * @name Clusters
+     * @module modeling
 	 * @description Clustering of spatial datasets
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -1581,7 +1582,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name modeling.service:Proximities
+	 * @name Proximities
+     * @module modeling
 	 * @description
 	 * A matrix of proximities for a set of vertices.
 	 *
@@ -1608,7 +1610,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Proximities#set
+			 * @name Proximities#set
 			 * @kind function
 			 *
 			 * @description
@@ -1698,7 +1700,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Proximities#getMaxDistance
+			 * @name Proximities#getMaxDistance
 			 * @kind function
 			 *
 			 * @description
@@ -1720,7 +1722,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Proximities#get
+			 * @name Proximities#get
 			 * @kind function
 			 *
 			 * @description
@@ -1745,7 +1747,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Proximities#getCurrent
+			 * @name Proximities#getCurrent
 			 * @kind function
 			 *
 			 * @description
@@ -1763,7 +1765,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name modeling.service:Restraints
+	 * @name Restraints
+     * @module modeling
 	 * @description
 	 * Restraints for Modeling.
 	 *
@@ -1793,7 +1796,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Restraints#set
+			 * @name Restraints#set
 			 * @kind function
 			 *
 			 * @description
@@ -1831,7 +1834,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Restraints#get
+			 * @name Restraints#get
 			 * @kind function
 			 *
 			 * @description
@@ -1876,7 +1879,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Restraints#getCurrent
+			 * @name Restraints#getCurrent
 			 * @kind function
 			 *
 			 * @description
@@ -1895,7 +1898,6 @@
 	/**
 	 * @ngdoc module
 	 * @name visualization
-	 * @module visualization
 	 * @description
 	 * Visualization Module
 	 * Contains scripts for Visualization
@@ -1912,7 +1914,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name visualization.service:Networks
+	 * @name Networks
+     * @module visualization
 	 * @description
 	 * Load app and initialize.
 	 *
@@ -1926,7 +1929,7 @@
 			
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Networks#lineSegmentsRGB
+			 * @name Networks#lineSegmentsRGB
 			 * @kind function
 			 *
 			 * @description
@@ -1974,7 +1977,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Networks#getFeatureRGB
+			 * @name Networks#getFeatureRGB
 			 * @kind function
 			 *
 			 * @description
@@ -1998,7 +2001,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Networks#lineSegmentsAlpha
+			 * @name Networks#lineSegmentsAlpha
 			 * @kind function
 			 *
 			 * @description
@@ -2034,7 +2037,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Networks#getMatrixIndex
+			 * @name Networks#getMatrixIndex
 			 * @kind function
 			 *
 			 * @description
@@ -2062,7 +2065,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name visualization.service:PathControls
+	 * @name PathControls
+     * @module visualization
 	 * @description
 	 * Generate controls for 3D paths from set of vertices.
 	 *
@@ -2076,7 +2080,7 @@
 			
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:PathControls#simple
+			 * @name PathControls#simple
 			 * @kind function
 			 *
 			 * @description
@@ -2135,7 +2139,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:PathControls#cubic
+			 * @name PathControls#cubic
 			 * @kind function
 			 *
 			 * @description
@@ -2278,7 +2282,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name visualization.service:Paths
+	 * @name Paths
+     * @module visualization
 	 * @description
 	 * Generate 3D paths from set of control vertices.
 	 *
@@ -2292,7 +2297,7 @@
 			
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Paths#splineNearFit
+			 * @name Paths#splineNearFit
 			 * @kind function
 			 *
 			 * @description
@@ -2319,7 +2324,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Paths#spline
+			 * @name Paths#spline
 			 * @kind function
 			 *
 			 * @description
@@ -2359,7 +2364,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Paths#quadraticBezier
+			 * @name Paths#quadraticBezier
 			 * @kind function
 			 *
 			 * @description
@@ -2399,7 +2404,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Paths#cubicBezier
+			 * @name Paths#cubicBezier
 			 * @kind function
 			 *
 			 * @description
@@ -2453,11 +2458,11 @@
 
 	/**
 	 * @ngdoc service
-	 * @name visualization.service:Segments
+	 * @name Segments
+     * @module visualization
 	 * @description
 	 * Methods for generating Arrays of colors.
 	 *
-	 * @requires VERBOSE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires generic.Color
 	 *
@@ -2467,7 +2472,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#gradientHCL
+			 * @name Segments#gradientHCL
 			 * @kind function
 			 *
 			 * @description
@@ -2497,7 +2502,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#gradientComponentRGB
+			 * @name Segments#gradientComponentRGB
 			 * @kind function
 			 *
 			 * @description UNUSED - 
@@ -2538,7 +2543,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#bicolor
+			 * @name Segments#bicolor
 			 * @kind function
 			 *
 			 * @description
@@ -2570,7 +2575,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#matrix
+			 * @name Segments#matrix
 			 * @kind function
 			 *
 			 * @description
@@ -2599,7 +2604,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#bicolorVariable
+			 * @name Segments#bicolorVariable
 			 * @kind function
 			 *
 			 * @description
@@ -2644,7 +2649,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#featureGraph
+			 * @name Segments#featureGraph
 			 * @kind function
 			 *
 			 * @description
@@ -2666,7 +2671,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#features
+			 * @name Segments#features
 			 * @kind function
 			 *
 			 * @description

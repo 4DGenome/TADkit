@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name generic.directive:routeCssClassnames
+	 * @name routeCssClassnames
+     * @module generic
 	 * @scope
 	 * @restrict A
 	 * @element body

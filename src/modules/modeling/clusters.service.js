@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name modeling.service:Clusters
+	 * @name Clusters
+     * @module modeling
 	 * @description Clustering of spatial datasets
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log

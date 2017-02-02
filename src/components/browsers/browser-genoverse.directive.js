@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowserGenoverse
+	 * @name tkComponentBrowserGenoverse
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description

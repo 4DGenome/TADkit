@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc module
 	 * @name visualization
-	 * @module visualization
 	 * @description
 	 * Visualization Module
 	 * Contains scripts for Visualization

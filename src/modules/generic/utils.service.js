@@ -10,8 +10,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name generic.service:Utils
-	 *
+	 * @name Utils
+	 * @module generic
 	 * @description
 	 * Generic javascript utilities.
 	 *

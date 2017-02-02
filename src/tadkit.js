@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc module
 	 * @name TADkit
-	 * @module TADkit
 	 * @description
 	 * Main module for TADkit app.
 	 *

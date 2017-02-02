@@ -8,11 +8,11 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name browsers.service:JsorollaService
+	 * @name JsorollaService
+     * @module browsers
 	 * @description
 	 * Service loading JSorolla for Track management
 	 *
-	 * @requires ONLINE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 *
@@ -25,7 +25,7 @@
 		return {
 			/**
 			 * @ngdoc method
-			 * @name browsers.service:JsorollaService#load
+			 * @name JsorollaService#load
 			 * @kind function
 			 *
 			 * @description

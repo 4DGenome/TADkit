@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Components
+	 * @name Components
+     * @module TADkit
 	 * @description Components for Storyboards.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -27,7 +28,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#load
+			 * @name TADkit.Components#load
 			 * @kind function
 			 *
 			 * @description
@@ -58,7 +59,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#add
+			 * @name TADkit.Components#add
 			 * @kind function
 			 *
 			 * @description
@@ -100,7 +101,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#remove
+			 * @name TADkit.Components#remove
 			 * @kind function
 			 *
 			 * @description
@@ -118,7 +119,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#set
+			 * @name TADkit.Components#set
 			 * @kind function
 			 *
 			 * @description
@@ -135,7 +136,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#init
+			 * @name TADkit.Components#init
 			 * @kind function
 			 *
 			 * @description
@@ -167,7 +168,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#setViewpoint
+			 * @name TADkit.Components#setViewpoint
 			 * @kind function
 			 *
 			 * @description
@@ -205,7 +206,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#get
+			 * @name TADkit.Components#get
 			 * @kind function
 			 *
 			 * @description
@@ -239,7 +240,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#getComponent
+			 * @name TADkit.Components#getComponent
 			 * @kind function
 			 *
 			 * @description
@@ -256,7 +257,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#getComponentById
+			 * @name TADkit.Components#getComponentById
 			 * @kind function
 			 *
 			 * @description
@@ -310,7 +311,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Components#getComponentByType
+			 * @name TADkit.Components#getComponentByType
 			 * @kind function
 			 *
 			 * @description

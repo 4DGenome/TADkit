@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowser
+	 * @name tkComponentBrowser
+     * @module TADkit
 	 * @restrict E
 	 *
 	 * @description

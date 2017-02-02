@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name visualization.service:PathControls
+	 * @name PathControls
+     * @module visualization
 	 * @description
 	 * Generate controls for 3D paths from set of vertices.
 	 *
@@ -16,7 +17,7 @@
 			
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:PathControls#simple
+			 * @name PathControls#simple
 			 * @kind function
 			 *
 			 * @description
@@ -75,7 +76,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:PathControls#cubic
+			 * @name PathControls#cubic
 			 * @kind function
 			 *
 			 * @description

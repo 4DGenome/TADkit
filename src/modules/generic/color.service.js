@@ -10,7 +10,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name generic.service:Color
+	 * @name Color
+     * @module generic
 	 *
 	 * @description
 	 * Color processing beyond that covered by the THREEjs and d3js APIs.

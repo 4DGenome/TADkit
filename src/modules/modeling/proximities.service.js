@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name modeling.service:Proximities
+	 * @name Proximities
+     * @module modeling
 	 * @description
 	 * A matrix of proximities for a set of vertices.
 	 *
@@ -29,7 +30,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Proximities#set
+			 * @name Proximities#set
 			 * @kind function
 			 *
 			 * @description
@@ -119,7 +120,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Proximities#getMaxDistance
+			 * @name Proximities#getMaxDistance
 			 * @kind function
 			 *
 			 * @description
@@ -141,7 +142,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Proximities#get
+			 * @name Proximities#get
 			 * @kind function
 			 *
 			 * @description
@@ -166,7 +167,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name modeling.service:Proximities#getCurrent
+			 * @name Proximities#getCurrent
 			 * @kind function
 			 *
 			 * @description

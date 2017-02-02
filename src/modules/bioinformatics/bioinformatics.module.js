@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc module
 	 * @name bioinformatics
-	 * @module bioinformatics
 	 * @description
 	 * Bioinformatics Module
 	 * Contains scripts which facilitate Bioinformatics

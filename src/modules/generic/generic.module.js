@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc module
 	 * @name generic
-	 * @module generic
 	 * @description
 	 * Generic Module
 	 * Contains generic scripts which are not available on Bower

@@ -2,19 +2,20 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Init
+	 * @name Init
+     * @module TADkit
 	 * @description Initialize default Objects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
-	 * @requires TADkit.service:Users
-	 * @requires TADkit.service:Projects
-	 * @requires TADkit.service:Datasets
-	 * @requires TADkit.service:Layers
-	 * @requires TADkit.service:Storyboards
-	 * @requires TADkit.service:Proximities
-	 * @requires TADkit.service:Restraints
-	 * @requires TADkit.service:EnsemblColors
+	 * @requires TADkit.Users
+	 * @requires TADkit.Projects
+	 * @requires TADkit.Datasets
+	 * @requires TADkit.Layers
+	 * @requires TADkit.Storyboards
+	 * @requires modeling.Proximities
+	 * @requires modeling.Restraints
+	 * @requires bioinformatics.EnsemblColors
 	 *
 	 */
 	angular
@@ -25,18 +26,18 @@
 
 		/**
 		 * @ngdoc method
-		 * @name TADkit.service:Init#buildUserHierarchy
+		 * @name TADkit.Init#buildUserHierarchy
 		 * @kind function
 		 *
 		 * @description
 		 * Build app Object hierarchy ie. User > Projects > [Datasets | Layers | Storyboards]
 		 *
 		 * @requires $log
-		 * @requires TADkit.service:Users
-		 * @requires TADkit.service:Projects
-		 * @requires TADkit.service:Datasets
-		 * @requires TADkit.service:Layers
-		 * @requires TADkit.service:Storyboards
+		 * @requires TADkit.Users
+		 * @requires TADkit.Projects
+		 * @requires TADkit.Datasets
+		 * @requires TADkit.Layers
+		 * @requires TADkit.Storyboards
 		 *
 		 */
 		function buildUX() {
@@ -59,17 +60,17 @@
 
 		/**
 		 * @ngdoc method
-		 * @name TADkit.service:Init#setDefaultDataset
+		 * @name TADkit.Init#setDefaultDataset
 		 * @kind function
 		 *
 		 * @description
 		 * Set default dataset.
 		 *
 		 * @requires $log
-		 * @requires TADkit.service:Datasets
-		 * @requires TADkit.service:Proximities
-		 * @requires TADkit.service:Restraints
-		 * @requires TADkit.service:EnsemblColors
+		 * @requires TADkit.Datasets
+		 * @requires TADkit.Proximities
+		 * @requires TADkit.Restraints
+		 * @requires TADkit.EnsemblColors
 		 *
 		 */
 		function setDefaultDataset() {
@@ -97,18 +98,18 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.service:Init#defaults
+			 * @name TADkit.Init#defaults
 			 * @kind function
 			 *
 			 * @description
 			 * Initalizes appw.
 			 *
 			 * @requires $log
-			 * @requires TADkit.service:Users
-			 * @requires TADkit.service:Projects
-			 * @requires TADkit.service:Datasets
-			 * @requires TADkit.service:Datasets
-			 * @requires TADkit.service:EnsemblColors
+			 * @requires TADkit.Users
+			 * @requires TADkit.Projects
+			 * @requires TADkit.Datasets
+			 * @requires TADkit.Datasets
+			 * @requires TADkit.EnsemblColors
 			 *
 			 * @returns {Object} All loaded defaults.
 			 */

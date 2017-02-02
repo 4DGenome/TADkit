@@ -2,11 +2,11 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name bioinformatics.service:FeaturesEnsembl
+	 * @name FeaturesEnsembl
+     * @module bioinformatics
 	 * @description
 	 * Import and manage Genomic features (eg. genes) from Ensembl etc.
 	 *
-	 * @requires ONLINE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$http
@@ -28,7 +28,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#ping
+			 * @name FeaturesEnsembl#ping
 			 * @kind function
 			 *
 			 * @description
@@ -59,7 +59,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#load
+			 * @name FeaturesEnsembl#load
 			 * @kind function
 			 *
 			 * @description
@@ -98,7 +98,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#setBiotypeStyle
+			 * @name FeaturesEnsembl#setBiotypeStyle
 			 * @kind function
 			 *
 			 * @description
@@ -121,7 +121,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#setLengthBP
+			 * @name FeaturesEnsembl#setLengthBP
 			 * @kind function
 			 *
 			 * @description
@@ -145,7 +145,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:FeaturesEnsembl#get
+			 * @name FeaturesEnsembl#get
 			 * @kind function
 			 *
 			 * @description

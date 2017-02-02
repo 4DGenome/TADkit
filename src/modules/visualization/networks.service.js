@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name visualization.service:Networks
+	 * @name Networks
+     * @module visualization
 	 * @description
 	 * Load app and initialize.
 	 *
@@ -16,7 +17,7 @@
 			
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Networks#lineSegmentsRGB
+			 * @name Networks#lineSegmentsRGB
 			 * @kind function
 			 *
 			 * @description
@@ -64,7 +65,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Networks#getFeatureRGB
+			 * @name Networks#getFeatureRGB
 			 * @kind function
 			 *
 			 * @description
@@ -88,7 +89,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Networks#lineSegmentsAlpha
+			 * @name Networks#lineSegmentsAlpha
 			 * @kind function
 			 *
 			 * @description
@@ -124,7 +125,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Networks#getMatrixIndex
+			 * @name Networks#getMatrixIndex
 			 * @kind function
 			 *
 			 * @description

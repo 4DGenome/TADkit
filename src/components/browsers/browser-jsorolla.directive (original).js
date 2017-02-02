@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc directive
-	 * @name TADkit.directive:tkComponentBrowserJsorolla
+	 * @name tkComponentBrowserJsorolla
+     * @module TADkit
 	 * @restrict EA
 	 *
 	 * @description

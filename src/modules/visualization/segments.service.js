@@ -6,11 +6,11 @@
 
 	/**
 	 * @ngdoc service
-	 * @name visualization.service:Segments
+	 * @name Segments
+     * @module visualization
 	 * @description
 	 * Methods for generating Arrays of colors.
 	 *
-	 * @requires VERBOSE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires generic.Color
 	 *
@@ -20,7 +20,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#gradientHCL
+			 * @name Segments#gradientHCL
 			 * @kind function
 			 *
 			 * @description
@@ -50,7 +50,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#gradientComponentRGB
+			 * @name Segments#gradientComponentRGB
 			 * @kind function
 			 *
 			 * @description UNUSED - 
@@ -91,7 +91,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#bicolor
+			 * @name Segments#bicolor
 			 * @kind function
 			 *
 			 * @description
@@ -123,7 +123,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#matrix
+			 * @name Segments#matrix
 			 * @kind function
 			 *
 			 * @description
@@ -152,7 +152,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#bicolorVariable
+			 * @name Segments#bicolorVariable
 			 * @kind function
 			 *
 			 * @description
@@ -197,7 +197,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#featureGraph
+			 * @name Segments#featureGraph
 			 * @kind function
 			 *
 			 * @description
@@ -219,7 +219,7 @@
 
 			/**
 			 * @ngdocs function
-			 * @name visualization.service:Segments#features
+			 * @name Segments#features
 			 * @kind function
 			 *
 			 * @description

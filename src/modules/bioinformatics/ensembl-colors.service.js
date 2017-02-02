@@ -2,11 +2,11 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name bioinformatics.service:EnsemblColors
+	 * @name EnsemblColors
+     * @module bioinformatics
 	 * @description
 	 * Import and manage Genomic feature colors (eg. genes) from Ensembl etc.
 	 *
-	 * @requires ONLINE
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$http
@@ -23,7 +23,7 @@
 			
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:EnsemblColors#load
+			 * @name EnsemblColors#load
 			 * @kind function
 			 *
 			 * @description
@@ -59,7 +59,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:EnsemblColors#get
+			 * @name EnsemblColors#get
 			 * @kind function
 			 *
 			 * @description
@@ -78,7 +78,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name bioinformatics.service:EnsemblColors#colorsFromIni
+			 * @name EnsemblColors#colorsFromIni
 			 * @kind function
 			 *
 			 * @description

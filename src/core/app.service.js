@@ -1,17 +1,18 @@
-(function() {
+    (function() {
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:App
+	 * @name App
+	 * @module TADkit
 	 * @description Load app and initialize.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://github.com/3DGenomes/angular-threejs
 	 * @requires https://github.com/3DGenomes/angular-d3js
-	 * @requires TADkit.service:Settings
-	 * @requires TADkit.service:Components
-	 * @requires TADkit.service:Init
+	 * @requires TADkit.Settings
+	 * @requires TADkit.Components
+	 * @requires TADkit.Init
 	 */
 	angular
 		.module('TADkit')
@@ -22,7 +23,7 @@
 		/**
 		 * @ngdoc method
 		 * @function
-		 * @name TADkit.service:App#load
+		 * @name TADkit.App#load
 		 * @kind function
 		 *
 		 * @description
@@ -60,7 +61,7 @@
 
 		/**
 		 * @ngdoc method
-		 * @name TADkit.service:App#init
+		 * @name TADkit.App#init
 		 * @kind function
 		 *
 		 * @description

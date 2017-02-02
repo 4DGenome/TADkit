@@ -3,7 +3,6 @@
 	/**
 	 * @ngdoc module
 	 * @name browsers
-	 * @module browsers
 	 * @description
 	 * Bowsers Module
 	 * Contains generic scripts which are not available on Bower

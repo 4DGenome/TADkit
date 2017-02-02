@@ -2,19 +2,20 @@
 	'use strict';
 	/**
 	 * @ngdoc service
-	 * @name TADkit.service:Layers
+	 * @name Layers
+     * @module layers
 	 * @description Layers of Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$http
 	 * @requires https://github.com/monicao/angular-uuid4
-	 * @requires TADkit.service:Settings
-	 * @requires TADkit.service:Storyboards
-	 * @requires TADkit.service:FeaturesEnsembl
-	 * @requires TADkit.service:EnsemblColors
-	 * @requires TADkit.service:Segments
-	 * @requires TADkit.service:Networks
+	 * @requires TADkit.Settings
+	 * @requires TADkit.Storyboards
+	 * @requires bioinformatics.FeaturesEnsembl
+	 * @requires bioinformatics.EnsemblColors
+	 * @requires visualization.Segments
+	 * @requires visualization.Networks
 	 *
 	 */
 	angular
