@@ -5,7 +5,7 @@ var Package = require('dgeni').Package;
 
 module.exports = new Package('myDoc', [
     require('dgeni-packages/ngdoc'),
-//    require('dgeni-markdown')
+    require('dgeni-markdown')
 ])
 
 //.processor(require('./index-page'))

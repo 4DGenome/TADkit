@@ -10,9 +10,9 @@
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires TADkit.Users
 	 * @requires TADkit.Projects
-	 * @requires TADkit.Datasets
-	 * @requires TADkit.Layers
 	 * @requires TADkit.Storyboards
+	 * @requires datasets.Datasets
+	 * @requires layers.Layers
 	 * @requires modeling.Proximities
 	 * @requires modeling.Restraints
 	 * @requires bioinformatics.EnsemblColors
@@ -35,8 +35,8 @@
 		 * @requires $log
 		 * @requires TADkit.Users
 		 * @requires TADkit.Projects
-		 * @requires TADkit.Datasets
-		 * @requires TADkit.Layers
+		 * @requires datasets.Datasets
+		 * @requires layers.Layers
 		 * @requires TADkit.Storyboards
 		 *
 		 */
@@ -107,8 +107,8 @@
 			 * @requires $log
 			 * @requires TADkit.Users
 			 * @requires TADkit.Projects
-			 * @requires TADkit.Datasets
-			 * @requires TADkit.Datasets
+			 * @requires datasets.Datasets
+			 * @requires layers.Layers
 			 * @requires TADkit.EnsemblColors
 			 *
 			 * @returns {Object} All loaded defaults.

@@ -3,7 +3,7 @@
 	/**
 	 * @ngdoc service
 	 * @name Datasets
-     * @module TADkit
+     * @module datasets
 	 * @description Datasets of Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -26,7 +26,7 @@
 		return {
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#load
+			 * @name Datasets#load
 			 * @kind function
 			 *
 			 * @description
@@ -63,7 +63,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#import
+			 * @name Datasets#import
 			 * @kind function
 			 *
 			 * @description
@@ -99,7 +99,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#import
+			 * @name Datasets#import
 			 * @kind function
 			 *
 			 * @description
@@ -121,7 +121,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#unique
+			 * @name Datasets#unique
 			 * @kind function
 			 *
 			 * @description
@@ -165,7 +165,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#add
+			 * @name Datasets#add
 			 * @kind function
 			 *
 			 * @description
@@ -186,7 +186,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#clear
+			 * @name Datasets#clear
 			 * @kind function
 			 *
 			 * @description
@@ -203,7 +203,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#remove
+			 * @name Datasets#remove
 			 * @kind function
 			 *
 			 * @description
@@ -225,7 +225,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#set
+			 * @name Datasets#set
 			 * @kind function
 			 *
 			 * @description
@@ -243,7 +243,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#get
+			 * @name Datasets#get
 			 * @kind function
 			 *
 			 * @description
@@ -257,7 +257,7 @@
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#getDataset			
+			 * @name Datasets#getDataset			
 			 * @kind function
 			 *
 			 * @description
@@ -272,7 +272,7 @@
 			},
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#getModel
+			 * @name Datasets#getModel
 			 * @kind function
 			 *
 			 * @description

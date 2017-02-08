@@ -721,9 +721,9 @@ angular.module("TADkit")
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$q
 	 * @requires TADkit.Users
 	 * @requires TADkit.Projects
-	 * @requires TADkit.Datasets
-	 * @requires TADkit.Layers
 	 * @requires TADkit.Storyboards
+	 * @requires datasets.Datasets
+	 * @requires layers.Layers
 	 * @requires modeling.Proximities
 	 * @requires modeling.Restraints
 	 * @requires bioinformatics.EnsemblColors
@@ -746,8 +746,8 @@ angular.module("TADkit")
 		 * @requires $log
 		 * @requires TADkit.Users
 		 * @requires TADkit.Projects
-		 * @requires TADkit.Datasets
-		 * @requires TADkit.Layers
+		 * @requires datasets.Datasets
+		 * @requires layers.Layers
 		 * @requires TADkit.Storyboards
 		 *
 		 */
@@ -818,8 +818,8 @@ angular.module("TADkit")
 			 * @requires $log
 			 * @requires TADkit.Users
 			 * @requires TADkit.Projects
-			 * @requires TADkit.Datasets
-			 * @requires TADkit.Datasets
+			 * @requires datasets.Datasets
+			 * @requires layers.Layers
 			 * @requires TADkit.EnsemblColors
 			 *
 			 * @returns {Object} All loaded defaults.
@@ -1421,7 +1421,7 @@ angular.module("TADkit")
 	 * Contains datasets scripts which are essential to the TADkit App.
 	 *
 	 * @example
-	 * `angular.module('myApp',['takit.datasets']);`
+	 * `angular.module('myApp',['tadkit.datasets']);`
 	 *
 	 */
 	angular
@@ -1432,7 +1432,7 @@ angular.module("TADkit")
 	/**
 	 * @ngdoc service
 	 * @name DataImport
-     * @module TADkit
+     * @module datasets
 	 * @description Import datasets to Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -1450,7 +1450,7 @@ angular.module("TADkit")
 		return {
 			/**
 			 * @ngdoc method
-			 * @name TADkit.DataImport#import
+			 * @name DataImport#import
 			 * @kind function
 			 *
 			 * @description Process for importing data
@@ -1492,7 +1492,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.DataImport#parse
+			 * @name DataImport#parse
 			 * @kind function
 			 *
 			 * @description Parse file data into JSON object
@@ -1512,7 +1512,7 @@ angular.module("TADkit")
 			
 			/**
 			 * @ngdoc method
-			 * @name TADkit.DataImport#validate
+			 * @name DataImport#validate
 			 * @kind function
 			 *
 			 * @description
@@ -1560,7 +1560,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.DataImport#filter
+			 * @name DataImport#filter
 			 * @kind function
 			 *
 			 * @description
@@ -1593,7 +1593,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.DataImport#describe
+			 * @name DataImport#describe
 			 * @kind function
 			 *
 			 * @description
@@ -1651,7 +1651,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.DataImport#create
+			 * @name DataImport#create
 			 * @kind function
 			 *
 			 * @description Create new dataset object
@@ -1679,7 +1679,7 @@ angular.module("TADkit")
 	/**
 	 * @ngdoc service
 	 * @name Datasets
-     * @module TADkit
+     * @module datasets
 	 * @description Datasets of Projects.
 	 *
 	 * @requires https://code.angularjs.org/1.3.16/docs/api/ng/service/$log
@@ -1702,7 +1702,7 @@ angular.module("TADkit")
 		return {
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#load
+			 * @name Datasets#load
 			 * @kind function
 			 *
 			 * @description
@@ -1739,7 +1739,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#import
+			 * @name Datasets#import
 			 * @kind function
 			 *
 			 * @description
@@ -1775,7 +1775,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#import
+			 * @name Datasets#import
 			 * @kind function
 			 *
 			 * @description
@@ -1797,7 +1797,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#unique
+			 * @name Datasets#unique
 			 * @kind function
 			 *
 			 * @description
@@ -1841,7 +1841,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#add
+			 * @name Datasets#add
 			 * @kind function
 			 *
 			 * @description
@@ -1862,7 +1862,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#clear
+			 * @name Datasets#clear
 			 * @kind function
 			 *
 			 * @description
@@ -1879,7 +1879,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#remove
+			 * @name Datasets#remove
 			 * @kind function
 			 *
 			 * @description
@@ -1901,7 +1901,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#set
+			 * @name Datasets#set
 			 * @kind function
 			 *
 			 * @description
@@ -1919,7 +1919,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#get
+			 * @name Datasets#get
 			 * @kind function
 			 *
 			 * @description
@@ -1933,7 +1933,7 @@ angular.module("TADkit")
 
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#getDataset			
+			 * @name Datasets#getDataset			
 			 * @kind function
 			 *
 			 * @description
@@ -1948,7 +1948,7 @@ angular.module("TADkit")
 			},
 			/**
 			 * @ngdoc method
-			 * @name TADkit.Datasets#getModel
+			 * @name Datasets#getModel
 			 * @kind function
 			 *
 			 * @description
@@ -1981,7 +1981,7 @@ angular.module("TADkit")
 	 * Contains layers scripts which are essential to the TADkit App.
 	 *
 	 * @example
-	 * `angular.module('myApp',['takit.layers']);`
+	 * `angular.module('myApp',['tadkit.layers']);`
 	 *
 	 */
 	angular
@@ -2769,21 +2769,6 @@ angular.module("TADkit")
 })();
 (function() {
 	'use strict';
-	/**
-	 * @ngdoc directive
-	 * @name tkComponentBrowserJsorolla
-     * @module TADkit
-	 * @restrict EA
-	 *
-	 * @description
-	 * OpenCB/jsorolla/	genome-viewer directive that is replaced on complie
-	 * by real component directive from supplied object type.
-	 * e.g. from a array of components objects
-	 *
-	 * @example
-	 * `<div tk-component-track-browser-jsorolla ng-repeat='component in components'></div>`
-	 *
-	 */
 	angular
 		.module('TADkit')
 		.directive('tkComponentBrowserJsorolla', tkComponentBrowserJsorolla);

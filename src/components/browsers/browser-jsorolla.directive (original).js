@@ -1,20 +1,5 @@
 (function() {
 	'use strict';
-	/**
-	 * @ngdoc directive
-	 * @name tkComponentBrowserJsorolla
-     * @module TADkit
-	 * @restrict EA
-	 *
-	 * @description
-	 * OpenCB/jsorolla/	genome-viewer directive that is replaced on complie
-	 * by real component directive from supplied object type.
-	 * e.g. from a array of components objects
-	 *
-	 * @example
-	 * `<div tk-component-track-browser-jsorolla ng-repeat='component in components'></div>`
-	 *
-	 */
 	angular
 		.module('TADkit')
 		.directive('tkComponentBrowserJsorolla', tkComponentBrowserJsorolla);

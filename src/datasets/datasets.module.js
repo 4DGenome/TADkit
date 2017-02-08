@@ -9,7 +9,7 @@
 	 * Contains datasets scripts which are essential to the TADkit App.
 	 *
 	 * @example
-	 * `angular.module('myApp',['takit.datasets']);`
+	 * `angular.module('myApp',['tadkit.datasets']);`
 	 *
 	 */
 	angular

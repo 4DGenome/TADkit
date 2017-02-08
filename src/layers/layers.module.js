@@ -9,7 +9,7 @@
 	 * Contains layers scripts which are essential to the TADkit App.
 	 *
 	 * @example
-	 * `angular.module('myApp',['takit.layers']);`
+	 * `angular.module('myApp',['tadkit.layers']);`
 	 *
 	 */
 	angular
