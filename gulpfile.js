@@ -58,7 +58,7 @@ gulp.task('lint', function() {
 // Dgeni documentation for GitHub Pages
 gulp.task('docs-dgeni', function() {
     // Import the index.js from the /docs/config folder
-    var docs = new dgeni([require('./docs/config')]);
+    var docs = new dgeni([require('./docs/_dgeni/dgeni.config')]);
     return docs.generate();
 });
 
