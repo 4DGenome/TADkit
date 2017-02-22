@@ -5,8 +5,7 @@ var Package = require('dgeni').Package;
 
 module.exports = new Package('TADkitDocs', [
     require('dgeni-packages/ngdoc'),
-  require('dgeni-packages/nunjucks')
-//    require('dgeni-markdown')
+  	require('dgeni-packages/nunjucks')
 ])
 
 //.processor(require('./index-page'))
@@ -59,9 +58,9 @@ module.exports = new Package('TADkitDocs', [
 
 .config(function(log, readFilesProcessor, writeFilesProcessor) {
     // Set the log level to 'info', switch to 'debug' when troubleshooting
-    log.level = 'info';
+    log.level = 'debug';
 
-    readFilesProcessor.basePath = path.resolve(packagePath, '../');
+    readFilesProcessor.basePath = path.resolve(packagePath, '../..');
 
     readFilesProcessor.sourceFiles = [
         {
