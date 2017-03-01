@@ -2,7 +2,7 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name datasets
+	 * @name TADkit.datasets
      * @module TADkit
 	 * @description
 	 * Datasets Module

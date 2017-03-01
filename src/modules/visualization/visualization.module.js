@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name visualization
+	 * @name TADkit.visualization
+	 * @module TADkit
 	 * @description
 	 * Visualization Module
 	 * Contains scripts for Visualization

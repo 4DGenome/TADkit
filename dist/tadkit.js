@@ -2,7 +2,7 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name TADkit
+	 * @name TADkit.TADkit
 	 * @description
 	 * Main module for TADkit app.
 	 *
@@ -291,7 +291,6 @@ angular.module("TADkit")
 
 		/**
 		 * @ngdoc method
-		 * @function
 		 * @name TADkit.App#load
 		 * @kind function
 		 *
@@ -328,16 +327,16 @@ angular.module("TADkit")
 			});
 		}
 
+
 		/**
 		 * @ngdoc method
 		 * @name TADkit.App#init
 		 * @kind function
 		 *
 		 * @description
-		 * Initlizes app defaults.
+		 * Inits app configuration and components.
 		 * Waits for promise.
 		 *
-		 * @requires TADkit.Init
 		 * @returns {Array} Results of all as promise.
 		 */
 		function init() {
@@ -1414,7 +1413,7 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name datasets
+	 * @name TADkit.datasets
      * @module TADkit
 	 * @description
 	 * Datasets Module
@@ -1974,7 +1973,7 @@ angular.module("TADkit")
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name layers
+	 * @name TADkit.layers
      * @module TADkit
 	 * @description
 	 * Layers Module
@@ -4498,13 +4497,13 @@ angular.module("TADkit")
 	 *
 	 * @description
 	 * Generates a d3 Barchart from the supplied data.
-	 * param {Object} type Track type.
-	 * param {Object} title Track title.
-	 * param {Array} settings Track settings.
-	 * param {Array} view Track view.
-	 * param {Array} data Track data.
-	 * param {Array} layer Value for toggle in template.
-	 * param {function} togglelayer Toggle function in template.
+	 * @param {Object} type Track type.
+	 * @param {Object} title Track title.
+	 * @param {Array} settings Track settings.
+	 * @param {Array} view Track view.
+	 * @param {Array} data Track data.
+	 * @param {Array} layer Value for toggle in template.
+	 * @param {function} togglelayer Toggle function in template.
      *
 	 * @example
 	 * <example>

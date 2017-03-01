@@ -1,5 +1,5 @@
 
-# TADkit
+# TADkit.TADkit
 
 Main module for TADkit app.
 
@@ -24,7 +24,7 @@ where X.Y.Z is the AngularJS version you are running.
 Then load the module in your application by adding it as a dependent module:
 
 ```
-angular.module('app', ['TADkit']);
+angular.module('app', ['TADkit.TADkit']);
 ```
 
 With that you&apos;re ready to get started!

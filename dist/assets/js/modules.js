@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name generic
+	 * @name TADkit.generic
+     * @module TADkit
 	 * @description
 	 * Generic Module
 	 * Contains generic scripts which are not available on Bower
@@ -71,7 +72,7 @@
 			 * see https://chromium.googlesource.com/apps/libapps/+/master/libdot/js/lib_colors.js
 			 *
 			 * @param {value} v The color value to test.
-			 * @return {boolean} true or false.
+			 * @returns {boolean} true or false.
 			 *
 			 */
 			testIfHex: function(v) {
@@ -87,7 +88,7 @@
 			 * Convert RGB color triplet to CSS hex color value.
 			 *
 			 * @param {string} rgb The RGB color value to convert eg. "rgb(64,128,192)"
-			 * @return {string} The corresponding CSS hex color eg. "#336699"
+			 * @returns {string} The corresponding CSS hex color eg. "#336699"
 			 *
 			 */
 			rgbToHex: function(rgb) {
@@ -108,7 +109,7 @@
 			 * Convert X11 color name to CSS hex color value.
 			 *
 			 * @param {string} name The color name to convert eg.red
-			 * @return {string} The corresponding CSS hex color eg.#ff0000
+			 * @returns {string} The corresponding CSS hex color eg.#ff0000
 			 */
 			nameToHex: function(name) {
 				// name = name.replace('/#','/');
@@ -144,7 +145,7 @@
 			 * eg. [#rrggbb,#rrggbb,#rrggbb,...] >>> [Color,Color,Color...]
 			 *
 			 * @param {Array} data Array of CSS hex colors.
-			 * @return {Array} The corresponding THREE Color to Array of THREE Colors
+			 * @returns {Array} The corresponding THREE Color to Array of THREE Colors
 			 */
 			THREEColorsFromHex: function(data) {
 				var colors = [];
@@ -165,7 +166,7 @@
 			 * eg. [#rrggbb,#rrggbb,#rrggbb,...] >>> [Color,Color,Color...]
 			 *
 			 * @param {Array} colors Array of THREE Colors.
-			 * @return {Float32Array} Float32 Array of RGB color components
+			 * @returns {Float32Array} Float32 Array of RGB color components
 			 */
 			vertexColorsFromTHREEColors: function(colors) {
 				// Buffer Geomptry to be used as LineSegments so
@@ -402,7 +403,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name ui
+	 * @name TADkit.ui
+	 * @module TADkit
 	 * @description
 	 * UI Module
 	 * User Interface compoments
@@ -681,7 +683,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name bioinformatics
+	 * @name TADkit.bioinformatics
+     * @module TADkit
 	 * @description
 	 * Bioinformatics Module
 	 * Contains scripts which facilitate Bioinformatics
@@ -725,7 +728,7 @@
 			 * Load feature colors as used in Emsembl.
 			 * Derived from remote INI or local JSON
 			 *
-			 * @return {Object} colorData List of colors categorized by feature object type.
+			 * @returns {Object} colorData List of colors categorized by feature object type.
 			 */
 			load: function() {
 				var self = this;
@@ -761,7 +764,7 @@
 			 * Get colors ().
 			 *
 			 * @param {number} ref Reference to EnsemblColors object property.
-			 * @return {colors} All colors or speccific from ref.
+			 * @returns {colors} All colors or speccific from ref.
 			 */
 			get: function(ref) {
 				if (!ref) {
@@ -785,7 +788,7 @@
 			 * assets/defaults/ensembl-webcode-COLOUR.ini
 			 *
 			 * @param {number} text data.
-			 * @return {Object} Generate 'colors list' Object from INI data.
+			 * @returns {Object} Generate 'colors list' Object from INI data.
 			 */
 			colorsFromIni: function(data) {
 				var self = this;
@@ -862,7 +865,7 @@
 			 * Use before requesting data.
 			 * https://github.com/Ensembl/ensembl-rest/wiki/Writing-Your-First-Client
 			 *
-			 * @return {boolean} Online status.
+			 * @returns {boolean} Online status.
 			 */
 			ping: function() {
 				$log.debug("Pinging Ensembl RESTful genomic data server...");
@@ -895,7 +898,7 @@
 			 * @param {Array} layer Array of URL path separators.
 			 * @param {Object} address Object containing URL path.
 			 *
-			 * @return {boolean} Online status.
+			 * @returns {boolean} Online status.
 			 */
 			load: function(layer, address) {
 				layer = layer || ["http://rest.ensemblgenomes.org/overlap/region/","species","/","chrom",":","chromStart","-","chromEnd","?feature=gene;content-type=application/json"];
@@ -932,7 +935,7 @@
 			 * Used to idenify and color for CSS.
 			 *
 			 * @param {Object} genes Genes list (see FeaturesEnsembl.load).
-			 * @return {Object} genes Genes list with added biotypeStyle property.
+			 * @returns {Object} genes Genes list with added biotypeStyle property.
 			 */
 			setBiotypeStyle: function(genes) {
 				// This generates a index in lowercase to be used in CSS styling
@@ -954,7 +957,7 @@
 			 * Sum base pair lengths from top level regions.
 			 *
 			 * @param {Object} top_level_region Genes list (see FeaturesEnsembl.load).
-			 * @return {number} lengthBP Length.
+			 * @returns {number} lengthBP Length.
 			 */
 			setLengthBP: function(top_level_region) {
 				var lengthBP = 0;
@@ -977,7 +980,7 @@
 			 * @description
 			 * Get FeaturesEnsembl.
 			 *
-			 * @return {Object} features FeaturesEnsembl.
+			 * @returns {Object} features FeaturesEnsembl.
 			 */
 			get: function() {
 					return features;
@@ -990,7 +993,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name browsers
+	 * @name TADkit.browsers
+     * @module TADkit
 	 * @description
 	 * Bowsers Module
 	 * Contains generic scripts which are not available on Bower
@@ -1308,7 +1312,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name modeling
+	 * @name TADkit.modeling
+     * @module TADkit
 	 * @description
 	 * Modeling Module
 	 * Contains scripts for (spatia) Modeling
@@ -1753,7 +1758,7 @@
 			 * @description
 			 * Get the model proximities for the current particle/position.
 			 *
-			 * @return {Object} The collection of model proximities.
+			 * @returns {Object} The collection of model proximities.
 			 */
 			getCurrent: function() {
 				return current;
@@ -1885,7 +1890,7 @@
 			 * @description
 			 * Get the model's restraints at current particle/position.
 			 *
-			 * @return {Object} A collection of model restraints.
+			 * @returns {Object} A collection of model restraints.
 			 */
 			getCurrent: function() {
 				return current;
@@ -1897,7 +1902,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name visualization
+	 * @name TADkit.visualization
+	 * @module TADkit
 	 * @description
 	 * Visualization Module
 	 * Contains scripts for Visualization

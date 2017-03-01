@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name modeling
+	 * @name TADkit.modeling
+     * @module TADkit
 	 * @description
 	 * Modeling Module
 	 * Contains scripts for (spatia) Modeling

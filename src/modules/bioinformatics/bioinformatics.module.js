@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name bioinformatics
+	 * @name TADkit.bioinformatics
+     * @module TADkit
 	 * @description
 	 * Bioinformatics Module
 	 * Contains scripts which facilitate Bioinformatics

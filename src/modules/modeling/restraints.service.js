@@ -122,7 +122,7 @@
 			 * @description
 			 * Get the model's restraints at current particle/position.
 			 *
-			 * @return {Object} A collection of model restraints.
+			 * @returns {Object} A collection of model restraints.
 			 */
 			getCurrent: function() {
 				return current;

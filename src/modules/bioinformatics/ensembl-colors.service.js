@@ -30,7 +30,7 @@
 			 * Load feature colors as used in Emsembl.
 			 * Derived from remote INI or local JSON
 			 *
-			 * @return {Object} colorData List of colors categorized by feature object type.
+			 * @returns {Object} colorData List of colors categorized by feature object type.
 			 */
 			load: function() {
 				var self = this;
@@ -66,7 +66,7 @@
 			 * Get colors ().
 			 *
 			 * @param {number} ref Reference to EnsemblColors object property.
-			 * @return {colors} All colors or speccific from ref.
+			 * @returns {colors} All colors or speccific from ref.
 			 */
 			get: function(ref) {
 				if (!ref) {
@@ -90,7 +90,7 @@
 			 * assets/defaults/ensembl-webcode-COLOUR.ini
 			 *
 			 * @param {number} text data.
-			 * @return {Object} Generate 'colors list' Object from INI data.
+			 * @returns {Object} Generate 'colors list' Object from INI data.
 			 */
 			colorsFromIni: function(data) {
 				var self = this;

@@ -2,7 +2,7 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name layers
+	 * @name TADkit.layers
      * @module TADkit
 	 * @description
 	 * Layers Module

@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name generic
+	 * @name TADkit.generic
+     * @module TADkit
 	 * @description
 	 * Generic Module
 	 * Contains generic scripts which are not available on Bower

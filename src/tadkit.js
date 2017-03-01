@@ -2,7 +2,7 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name TADkit
+	 * @name TADkit.TADkit
 	 * @description
 	 * Main module for TADkit app.
 	 *

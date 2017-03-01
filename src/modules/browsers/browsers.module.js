@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name browsers
+	 * @name TADkit.browsers
+     * @module TADkit
 	 * @description
 	 * Bowsers Module
 	 * Contains generic scripts which are not available on Bower

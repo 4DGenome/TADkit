@@ -22,7 +22,6 @@
 
 		/**
 		 * @ngdoc method
-		 * @function
 		 * @name TADkit.App#load
 		 * @kind function
 		 *
@@ -59,16 +58,16 @@
 			});
 		}
 
+
 		/**
 		 * @ngdoc method
 		 * @name TADkit.App#init
 		 * @kind function
 		 *
 		 * @description
-		 * Initlizes app defaults.
+		 * Inits app configuration and components.
 		 * Waits for promise.
 		 *
-		 * @requires TADkit.Init
 		 * @returns {Array} Results of all as promise.
 		 */
 		function init() {

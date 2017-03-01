@@ -173,7 +173,7 @@
 			 * @description
 			 * Get the model proximities for the current particle/position.
 			 *
-			 * @return {Object} The collection of model proximities.
+			 * @returns {Object} The collection of model proximities.
 			 */
 			getCurrent: function() {
 				return current;

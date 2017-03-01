@@ -2,7 +2,8 @@
 	'use strict';
 	/**
 	 * @ngdoc module
-	 * @name ui
+	 * @name TADkit.ui
+	 * @module TADkit
 	 * @description
 	 * UI Module
 	 * User Interface compoments

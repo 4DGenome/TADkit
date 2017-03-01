@@ -54,7 +54,7 @@
 			 * see https://chromium.googlesource.com/apps/libapps/+/master/libdot/js/lib_colors.js
 			 *
 			 * @param {value} v The color value to test.
-			 * @return {boolean} true or false.
+			 * @returns {boolean} true or false.
 			 *
 			 */
 			testIfHex: function(v) {
@@ -70,7 +70,7 @@
 			 * Convert RGB color triplet to CSS hex color value.
 			 *
 			 * @param {string} rgb The RGB color value to convert eg. "rgb(64,128,192)"
-			 * @return {string} The corresponding CSS hex color eg. "#336699"
+			 * @returns {string} The corresponding CSS hex color eg. "#336699"
 			 *
 			 */
 			rgbToHex: function(rgb) {
@@ -91,7 +91,7 @@
 			 * Convert X11 color name to CSS hex color value.
 			 *
 			 * @param {string} name The color name to convert eg.red
-			 * @return {string} The corresponding CSS hex color eg.#ff0000
+			 * @returns {string} The corresponding CSS hex color eg.#ff0000
 			 */
 			nameToHex: function(name) {
 				// name = name.replace('/#','/');
@@ -127,7 +127,7 @@
 			 * eg. [#rrggbb,#rrggbb,#rrggbb,...] >>> [Color,Color,Color...]
 			 *
 			 * @param {Array} data Array of CSS hex colors.
-			 * @return {Array} The corresponding THREE Color to Array of THREE Colors
+			 * @returns {Array} The corresponding THREE Color to Array of THREE Colors
 			 */
 			THREEColorsFromHex: function(data) {
 				var colors = [];
@@ -148,7 +148,7 @@
 			 * eg. [#rrggbb,#rrggbb,#rrggbb,...] >>> [Color,Color,Color...]
 			 *
 			 * @param {Array} colors Array of THREE Colors.
-			 * @return {Float32Array} Float32 Array of RGB color components
+			 * @returns {Float32Array} Float32 Array of RGB color components
 			 */
 			vertexColorsFromTHREEColors: function(colors) {
 				// Buffer Geomptry to be used as LineSegments so

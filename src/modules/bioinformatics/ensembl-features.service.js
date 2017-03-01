@@ -36,7 +36,7 @@
 			 * Use before requesting data.
 			 * https://github.com/Ensembl/ensembl-rest/wiki/Writing-Your-First-Client
 			 *
-			 * @return {boolean} Online status.
+			 * @returns {boolean} Online status.
 			 */
 			ping: function() {
 				$log.debug("Pinging Ensembl RESTful genomic data server...");
@@ -69,7 +69,7 @@
 			 * @param {Array} layer Array of URL path separators.
 			 * @param {Object} address Object containing URL path.
 			 *
-			 * @return {boolean} Online status.
+			 * @returns {boolean} Online status.
 			 */
 			load: function(layer, address) {
 				layer = layer || ["http://rest.ensemblgenomes.org/overlap/region/","species","/","chrom",":","chromStart","-","chromEnd","?feature=gene;content-type=application/json"];
@@ -106,7 +106,7 @@
 			 * Used to idenify and color for CSS.
 			 *
 			 * @param {Object} genes Genes list (see FeaturesEnsembl.load).
-			 * @return {Object} genes Genes list with added biotypeStyle property.
+			 * @returns {Object} genes Genes list with added biotypeStyle property.
 			 */
 			setBiotypeStyle: function(genes) {
 				// This generates a index in lowercase to be used in CSS styling
@@ -128,7 +128,7 @@
 			 * Sum base pair lengths from top level regions.
 			 *
 			 * @param {Object} top_level_region Genes list (see FeaturesEnsembl.load).
-			 * @return {number} lengthBP Length.
+			 * @returns {number} lengthBP Length.
 			 */
 			setLengthBP: function(top_level_region) {
 				var lengthBP = 0;
@@ -151,7 +151,7 @@
 			 * @description
 			 * Get FeaturesEnsembl.
 			 *
-			 * @return {Object} features FeaturesEnsembl.
+			 * @returns {Object} features FeaturesEnsembl.
 			 */
 			get: function() {
 					return features;
